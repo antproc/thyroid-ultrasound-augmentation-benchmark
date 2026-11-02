@@ -1,0 +1,12 @@
+name: TUCC
+aliases:
+  - tucc
+  - stanford
+  - cine
+required_clean_folder: VSE_CLEAN
+pairing:
+  image_suffix: _image
+  mask_suffix: _mask
+grouping:
+  primary_group: clip_id
+  notes: TUCC frames must not be treated as independent patients.

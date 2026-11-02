@@ -1,0 +1,10 @@
+name: TN3K
+aliases:
+  - tn3k
+required_clean_folder: VSE_CLEAN
+pairing:
+  image_suffix: _image
+  mask_suffix: _mask
+split_hint:
+  trainval_prefix: tn3k_trainval
+  test_prefix: tn3k_test

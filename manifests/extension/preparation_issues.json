@@ -1,0 +1,38 @@
+{
+  "status": "passed",
+  "issues": [],
+  "checked_samples": 14021,
+  "aligned_samples": 14021,
+  "resolved_size_mismatches": [
+    {
+      "dataset": "PKTN",
+      "sample_id": "pktn_Img_477",
+      "split": "train",
+      "source_mask_size": [
+        768,
+        576
+      ],
+      "prepared_mask_size": [
+        720,
+        576
+      ],
+      "method": "nearest_768x576_to_720x576",
+      "source_modified": false
+    },
+    {
+      "dataset": "PKTN",
+      "sample_id": "pktn_Img_481",
+      "split": "train",
+      "source_mask_size": [
+        768,
+        576
+      ],
+      "prepared_mask_size": [
+        720,
+        576
+      ],
+      "method": "nearest_768x576_to_720x576",
+      "source_modified": false
+    }
+  ]
+}

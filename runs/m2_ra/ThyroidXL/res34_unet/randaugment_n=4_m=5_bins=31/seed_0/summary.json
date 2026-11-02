@@ -1,0 +1,39 @@
+{
+  "metric_protocol": "per_image_sigmoid05_v2",
+  "dataset": "ThyroidXL",
+  "model": "res34_unet",
+  "augmentation": "randaugment:n=4,m=5,bins=31",
+  "seed": 0,
+  "epochs": 50,
+  "scheduler_epochs": 200,
+  "train_samples": 7633,
+  "val_samples": 1908,
+  "train_source_samples": {
+    "ThyroidXL": 7633
+  },
+  "val_source_samples": {
+    "ThyroidXL": 1908
+  },
+  "balanced_source_sampling": false,
+  "batch_size": 128,
+  "effective_batch_size": 128,
+  "image_size": 224,
+  "learning_rate": 0.000277414,
+  "weight_decay": 0.000343856,
+  "dropout": 0.454402,
+  "pretrained": true,
+  "top_n": null,
+  "source_datasets": [
+    "ThyroidXL"
+  ],
+  "target_dataset": null,
+  "validation_selection": "validation",
+  "split_manifest": "manifests/metric_v2/splits.csv",
+  "scan_mask_manifest": "manifests/metric_v2/scan_masks.csv",
+  "device": "cuda",
+  "best_dice": 0.8817235521184337,
+  "total_seconds": 7018.088697600178,
+  "checkpoint": "checkpoints/m2_ra/ThyroidXL/res34_unet/randaugment_n=4_m=5_bins=31/seed_0/best.pt",
+  "log": "runs/m2_ra/ThyroidXL/res34_unet/randaugment_n=4_m=5_bins=31/seed_0/train_log.csv",
+  "max_cuda_memory_mb_last_epoch": 5864.625
+}

@@ -1,0 +1,38 @@
+# Local datasets and derived image data
+data/
+prepared_data/
+scan_masks/
+scan_masks_arxiv/
+qc/
+
+# Local machine configuration
+configs/local_paths.yaml
+APPROVED_TO_TRAIN.txt
+APPROVED_ARCHITECTURE_VALIDATION.txt
+
+# Model binaries are distributed outside Git
+checkpoints/
+
+# Logs and Python build artifacts
+logs/
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+*.egg-info/
+build/
+dist/
+
+# Reproduction outputs and manuscript analyses are not versioned
+figures/
+reports_*.md
+external_VERSION.md
+results/
+
+# Derived inference outputs; summary.json and train_log.csv remain versioned.
+runs/**/test_*.json
+runs/**/test_per_image.csv
+prepared_data/
+scan_masks/
+reports/

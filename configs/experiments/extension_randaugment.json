@@ -1,0 +1,23 @@
+{
+  "phase": "extension_randaugment",
+  "datasets": ["PKTN", "TNUI-2021", "ThyroidXL"],
+  "models": ["res34_unet", "deeplabv3plus_resnet50", "mit_b2_unet"],
+  "seeds": [0, 1, 2],
+  "n_values": [2, 3, 4],
+  "m_values": [5, 10, 15, 30],
+  "bins": 31,
+  "expected_runs": 324,
+  "training_protocol": "configs/experiments/extension_plan.json",
+  "selection_uses": "mean best validation Dice over three seeds",
+  "depends_on_single_ranking": false,
+  "default_launch": "serial; wait while single launcher is active",
+  "optional_concurrent_single": "Explicit --allow-concurrent-single; ResNet34 only while single is active. Remaining models wait for single to finish.",
+  "model_order_first": true,
+  "memory_budget_GiB": {"res34_unet": 10, "deeplabv3plus_resnet50": 14, "mit_b2_unet": 18},
+  "single_reserve_GiB": 18,
+  "gpu_headroom_GiB": 2,
+  "checkpoint_budget_GiB_per_remaining_run": 0.4,
+  "disk_reserve_GiB": 30,
+  "on_error": "stop RandAugment queue, preserve artifacts, do not interrupt single",
+  "automatic_next_stage": false
+}

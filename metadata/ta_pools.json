@@ -1,0 +1,4448 @@
+[
+  {
+    "dataset": "DDTI",
+    "model": "deeplabv3plus_resnet50",
+    "top_n": 2,
+    "operations": [
+      "identity",
+      "random_crop",
+      "gaussian_noise"
+    ],
+    "operations_per_image": 2,
+    "sample_with_replacement": true,
+    "selection_uses": "validation"
+  },
+  {
+    "dataset": "DDTI",
+    "model": "deeplabv3plus_resnet50",
+    "top_n": 3,
+    "operations": [
+      "identity",
+      "random_crop",
+      "gaussian_noise",
+      "rotate"
+    ],
+    "operations_per_image": 2,
+    "sample_with_replacement": true,
+    "selection_uses": "validation"
+  },
+  {
+    "dataset": "DDTI",
+    "model": "deeplabv3plus_resnet50",
+    "top_n": 4,
+    "operations": [
+      "identity",
+      "random_crop",
+      "gaussian_noise",
+      "rotate",
+      "translate"
+    ],
+    "operations_per_image": 2,
+    "sample_with_replacement": true,
+    "selection_uses": "validation"
+  },
+  {
+    "dataset": "DDTI",
+    "model": "deeplabv3plus_resnet50",
+    "top_n": 5,
+    "operations": [
+      "identity",
+      "random_crop",
+      "gaussian_noise",
+      "rotate",
+      "translate",
+      "horizontal_flip"
+    ],
+    "operations_per_image": 2,
+    "sample_with_replacement": true,
+    "selection_uses": "validation"
+  },
+  {
+    "dataset": "DDTI",
+    "model": "deeplabv3plus_resnet50",
+    "top_n": 6,
+    "operations": [
+      "identity",
+      "random_crop",
+      "gaussian_noise",
+      "rotate",
+      "translate",
+      "horizontal_flip",
+      "contrast"
+    ],
+    "operations_per_image": 2,
+    "sample_with_replacement": true,
+    "selection_uses": "validation"
+  },
+  {
+    "dataset": "DDTI",
+    "model": "deeplabv3plus_resnet50",
+    "top_n": 7,
+    "operations": [
+      "identity",
+      "random_crop",
+      "gaussian_noise",
+      "rotate",
+      "translate",
+      "horizontal_flip",
+      "contrast",
+      "haze_artifact"
+    ],
+    "operations_per_image": 2,
+    "sample_with_replacement": true,
+    "selection_uses": "validation"
+  },
+  {
+    "dataset": "DDTI",
+    "model": "deeplabv3plus_resnet50",
+    "top_n": 8,
+    "operations": [
+      "identity",
+      "random_crop",
+      "gaussian_noise",
+      "rotate",
+      "translate",
+      "horizontal_flip",
+      "contrast",
+      "haze_artifact",
+      "vertical_flip"
+    ],
+    "operations_per_image": 2,
+    "sample_with_replacement": true,
+    "selection_uses": "validation"
+  },
+  {
+    "dataset": "DDTI",
+    "model": "deeplabv3plus_resnet50",
+    "top_n": 9,
+    "operations": [
+      "identity",
+      "random_crop",
+      "gaussian_noise",
+      "rotate",
+      "translate",
+      "horizontal_flip",
+      "contrast",
+      "haze_artifact",
+      "vertical_flip",
+      "gamma"
+    ],
+    "operations_per_image": 2,
+    "sample_with_replacement": true,
+    "selection_uses": "validation"
+  },
+  {
+    "dataset": "DDTI",
+    "model": "deeplabv3plus_resnet50",
+    "top_n": 10,
+    "operations": [
+      "identity",
+      "random_crop",
+      "gaussian_noise",
+      "rotate",
+      "translate",
+      "horizontal_flip",
+      "contrast",
+      "haze_artifact",
+      "vertical_flip",
+      "gamma",
+      "gaussian_shadow"
+    ],
+    "operations_per_image": 2,
+    "sample_with_replacement": true,
+    "selection_uses": "validation"
+  },
+  {
+    "dataset": "DDTI",
+    "model": "deeplabv3plus_resnet50",
+    "top_n": 11,
+    "operations": [
+      "identity",
+      "random_crop",
+      "gaussian_noise",
+      "rotate",
+      "translate",
+      "horizontal_flip",
+      "contrast",
+      "haze_artifact",
+      "vertical_flip",
+      "gamma",
+      "gaussian_shadow",
+      "brightness"
+    ],
+    "operations_per_image": 2,
+    "sample_with_replacement": true,
+    "selection_uses": "validation"
+  },
+  {
+    "dataset": "DDTI",
+    "model": "deeplabv3plus_resnet50",
+    "top_n": 12,
+    "operations": [
+      "identity",
+      "random_crop",
+      "gaussian_noise",
+      "rotate",
+      "translate",
+      "horizontal_flip",
+      "contrast",
+      "haze_artifact",
+      "vertical_flip",
+      "gamma",
+      "gaussian_shadow",
+      "brightness",
+      "depth_attenuation"
+    ],
+    "operations_per_image": 2,
+    "sample_with_replacement": true,
+    "selection_uses": "validation"
+  },
+  {
+    "dataset": "DDTI",
+    "model": "deeplabv3plus_resnet50",
+    "top_n": 13,
+    "operations": [
+      "identity",
+      "random_crop",
+      "gaussian_noise",
+      "rotate",
+      "translate",
+      "horizontal_flip",
+      "contrast",
+      "haze_artifact",
+      "vertical_flip",
+      "gamma",
+      "gaussian_shadow",
+      "brightness",
+      "depth_attenuation",
+      "zoom"
+    ],
+    "operations_per_image": 2,
+    "sample_with_replacement": true,
+    "selection_uses": "validation"
+  },
+  {
+    "dataset": "DDTI",
+    "model": "deeplabv3plus_resnet50",
+    "top_n": 14,
+    "operations": [
+      "identity",
+      "random_crop",
+      "gaussian_noise",
+      "rotate",
+      "translate",
+      "horizontal_flip",
+      "contrast",
+      "haze_artifact",
+      "vertical_flip",
+      "gamma",
+      "gaussian_shadow",
+      "brightness",
+      "depth_attenuation",
+      "zoom",
+      "bilateral_filter"
+    ],
+    "operations_per_image": 2,
+    "sample_with_replacement": true,
+    "selection_uses": "validation"
+  },
+  {
+    "dataset": "DDTI",
+    "model": "mit_b2_unet",
+    "top_n": 2,
+    "operations": [
+      "identity",
+      "depth_attenuation",
+      "gamma"
+    ],
+    "operations_per_image": 2,
+    "sample_with_replacement": true,
+    "selection_uses": "validation"
+  },
+  {
+    "dataset": "DDTI",
+    "model": "mit_b2_unet",
+    "top_n": 3,
+    "operations": [
+      "identity",
+      "depth_attenuation",
+      "gamma",
+      "horizontal_flip"
+    ],
+    "operations_per_image": 2,
+    "sample_with_replacement": true,
+    "selection_uses": "validation"
+  },
+  {
+    "dataset": "DDTI",
+    "model": "mit_b2_unet",
+    "top_n": 4,
+    "operations": [
+      "identity",
+      "depth_attenuation",
+      "gamma",
+      "horizontal_flip",
+      "translate"
+    ],
+    "operations_per_image": 2,
+    "sample_with_replacement": true,
+    "selection_uses": "validation"
+  },
+  {
+    "dataset": "DDTI",
+    "model": "mit_b2_unet",
+    "top_n": 5,
+    "operations": [
+      "identity",
+      "depth_attenuation",
+      "gamma",
+      "horizontal_flip",
+      "translate",
+      "random_crop"
+    ],
+    "operations_per_image": 2,
+    "sample_with_replacement": true,
+    "selection_uses": "validation"
+  },
+  {
+    "dataset": "DDTI",
+    "model": "mit_b2_unet",
+    "top_n": 6,
+    "operations": [
+      "identity",
+      "depth_attenuation",
+      "gamma",
+      "horizontal_flip",
+      "translate",
+      "random_crop",
+      "contrast"
+    ],
+    "operations_per_image": 2,
+    "sample_with_replacement": true,
+    "selection_uses": "validation"
+  },
+  {
+    "dataset": "DDTI",
+    "model": "mit_b2_unet",
+    "top_n": 7,
+    "operations": [
+      "identity",
+      "depth_attenuation",
+      "gamma",
+      "horizontal_flip",
+      "translate",
+      "random_crop",
+      "contrast",
+      "gaussian_shadow"
+    ],
+    "operations_per_image": 2,
+    "sample_with_replacement": true,
+    "selection_uses": "validation"
+  },
+  {
+    "dataset": "DDTI",
+    "model": "mit_b2_unet",
+    "top_n": 8,
+    "operations": [
+      "identity",
+      "depth_attenuation",
+      "gamma",
+      "horizontal_flip",
+      "translate",
+      "random_crop",
+      "contrast",
+      "gaussian_shadow",
+      "bilateral_filter"
+    ],
+    "operations_per_image": 2,
+    "sample_with_replacement": true,
+    "selection_uses": "validation"
+  },
+  {
+    "dataset": "DDTI",
+    "model": "mit_b2_unet",
+    "top_n": 9,
+    "operations": [
+      "identity",
+      "depth_attenuation",
+      "gamma",
+      "horizontal_flip",
+      "translate",
+      "random_crop",
+      "contrast",
+      "gaussian_shadow",
+      "bilateral_filter",
+      "brightness"
+    ],
+    "operations_per_image": 2,
+    "sample_with_replacement": true,
+    "selection_uses": "validation"
+  },
+  {
+    "dataset": "DDTI",
+    "model": "mit_b2_unet",
+    "top_n": 10,
+    "operations": [
+      "identity",
+      "depth_attenuation",
+      "gamma",
+      "horizontal_flip",
+      "translate",
+      "random_crop",
+      "contrast",
+      "gaussian_shadow",
+      "bilateral_filter",
+      "brightness",
+      "rotate"
+    ],
+    "operations_per_image": 2,
+    "sample_with_replacement": true,
+    "selection_uses": "validation"
+  },
+  {
+    "dataset": "DDTI",
+    "model": "mit_b2_unet",
+    "top_n": 11,
+    "operations": [
+      "identity",
+      "depth_attenuation",
+      "gamma",
+      "horizontal_flip",
+      "translate",
+      "random_crop",
+      "contrast",
+      "gaussian_shadow",
+      "bilateral_filter",
+      "brightness",
+      "rotate",
+      "vertical_flip"
+    ],
+    "operations_per_image": 2,
+    "sample_with_replacement": true,
+    "selection_uses": "validation"
+  },
+  {
+    "dataset": "DDTI",
+    "model": "mit_b2_unet",
+    "top_n": 12,
+    "operations": [
+      "identity",
+      "depth_attenuation",
+      "gamma",
+      "horizontal_flip",
+      "translate",
+      "random_crop",
+      "contrast",
+      "gaussian_shadow",
+      "bilateral_filter",
+      "brightness",
+      "rotate",
+      "vertical_flip",
+      "haze_artifact"
+    ],
+    "operations_per_image": 2,
+    "sample_with_replacement": true,
+    "selection_uses": "validation"
+  },
+  {
+    "dataset": "DDTI",
+    "model": "mit_b2_unet",
+    "top_n": 13,
+    "operations": [
+      "identity",
+      "depth_attenuation",
+      "gamma",
+      "horizontal_flip",
+      "translate",
+      "random_crop",
+      "contrast",
+      "gaussian_shadow",
+      "bilateral_filter",
+      "brightness",
+      "rotate",
+      "vertical_flip",
+      "haze_artifact",
+      "zoom"
+    ],
+    "operations_per_image": 2,
+    "sample_with_replacement": true,
+    "selection_uses": "validation"
+  },
+  {
+    "dataset": "DDTI",
+    "model": "mit_b2_unet",
+    "top_n": 14,
+    "operations": [
+      "identity",
+      "depth_attenuation",
+      "gamma",
+      "horizontal_flip",
+      "translate",
+      "random_crop",
+      "contrast",
+      "gaussian_shadow",
+      "bilateral_filter",
+      "brightness",
+      "rotate",
+      "vertical_flip",
+      "haze_artifact",
+      "zoom",
+      "gaussian_noise"
+    ],
+    "operations_per_image": 2,
+    "sample_with_replacement": true,
+    "selection_uses": "validation"
+  },
+  {
+    "dataset": "DDTI",
+    "model": "res34_unet",
+    "top_n": 2,
+    "operations": [
+      "identity",
+      "random_crop",
+      "gaussian_noise"
+    ],
+    "operations_per_image": 2,
+    "sample_with_replacement": true,
+    "selection_uses": "validation"
+  },
+  {
+    "dataset": "DDTI",
+    "model": "res34_unet",
+    "top_n": 3,
+    "operations": [
+      "identity",
+      "random_crop",
+      "gaussian_noise",
+      "horizontal_flip"
+    ],
+    "operations_per_image": 2,
+    "sample_with_replacement": true,
+    "selection_uses": "validation"
+  },
+  {
+    "dataset": "DDTI",
+    "model": "res34_unet",
+    "top_n": 4,
+    "operations": [
+      "identity",
+      "random_crop",
+      "gaussian_noise",
+      "horizontal_flip",
+      "haze_artifact"
+    ],
+    "operations_per_image": 2,
+    "sample_with_replacement": true,
+    "selection_uses": "validation"
+  },
+  {
+    "dataset": "DDTI",
+    "model": "res34_unet",
+    "top_n": 5,
+    "operations": [
+      "identity",
+      "random_crop",
+      "gaussian_noise",
+      "horizontal_flip",
+      "haze_artifact",
+      "brightness"
+    ],
+    "operations_per_image": 2,
+    "sample_with_replacement": true,
+    "selection_uses": "validation"
+  },
+  {
+    "dataset": "DDTI",
+    "model": "res34_unet",
+    "top_n": 6,
+    "operations": [
+      "identity",
+      "random_crop",
+      "gaussian_noise",
+      "horizontal_flip",
+      "haze_artifact",
+      "brightness",
+      "bilateral_filter"
+    ],
+    "operations_per_image": 2,
+    "sample_with_replacement": true,
+    "selection_uses": "validation"
+  },
+  {
+    "dataset": "DDTI",
+    "model": "res34_unet",
+    "top_n": 7,
+    "operations": [
+      "identity",
+      "random_crop",
+      "gaussian_noise",
+      "horizontal_flip",
+      "haze_artifact",
+      "brightness",
+      "bilateral_filter",
+      "gamma"
+    ],
+    "operations_per_image": 2,
+    "sample_with_replacement": true,
+    "selection_uses": "validation"
+  },
+  {
+    "dataset": "DDTI",
+    "model": "res34_unet",
+    "top_n": 8,
+    "operations": [
+      "identity",
+      "random_crop",
+      "gaussian_noise",
+      "horizontal_flip",
+      "haze_artifact",
+      "brightness",
+      "bilateral_filter",
+      "gamma",
+      "rotate"
+    ],
+    "operations_per_image": 2,
+    "sample_with_replacement": true,
+    "selection_uses": "validation"
+  },
+  {
+    "dataset": "DDTI",
+    "model": "res34_unet",
+    "top_n": 9,
+    "operations": [
+      "identity",
+      "random_crop",
+      "gaussian_noise",
+      "horizontal_flip",
+      "haze_artifact",
+      "brightness",
+      "bilateral_filter",
+      "gamma",
+      "rotate",
+      "translate"
+    ],
+    "operations_per_image": 2,
+    "sample_with_replacement": true,
+    "selection_uses": "validation"
+  },
+  {
+    "dataset": "DDTI",
+    "model": "res34_unet",
+    "top_n": 10,
+    "operations": [
+      "identity",
+      "random_crop",
+      "gaussian_noise",
+      "horizontal_flip",
+      "haze_artifact",
+      "brightness",
+      "bilateral_filter",
+      "gamma",
+      "rotate",
+      "translate",
+      "gaussian_shadow"
+    ],
+    "operations_per_image": 2,
+    "sample_with_replacement": true,
+    "selection_uses": "validation"
+  },
+  {
+    "dataset": "DDTI",
+    "model": "res34_unet",
+    "top_n": 11,
+    "operations": [
+      "identity",
+      "random_crop",
+      "gaussian_noise",
+      "horizontal_flip",
+      "haze_artifact",
+      "brightness",
+      "bilateral_filter",
+      "gamma",
+      "rotate",
+      "translate",
+      "gaussian_shadow",
+      "zoom"
+    ],
+    "operations_per_image": 2,
+    "sample_with_replacement": true,
+    "selection_uses": "validation"
+  },
+  {
+    "dataset": "DDTI",
+    "model": "res34_unet",
+    "top_n": 12,
+    "operations": [
+      "identity",
+      "random_crop",
+      "gaussian_noise",
+      "horizontal_flip",
+      "haze_artifact",
+      "brightness",
+      "bilateral_filter",
+      "gamma",
+      "rotate",
+      "translate",
+      "gaussian_shadow",
+      "zoom",
+      "contrast"
+    ],
+    "operations_per_image": 2,
+    "sample_with_replacement": true,
+    "selection_uses": "validation"
+  },
+  {
+    "dataset": "DDTI",
+    "model": "res34_unet",
+    "top_n": 13,
+    "operations": [
+      "identity",
+      "random_crop",
+      "gaussian_noise",
+      "horizontal_flip",
+      "haze_artifact",
+      "brightness",
+      "bilateral_filter",
+      "gamma",
+      "rotate",
+      "translate",
+      "gaussian_shadow",
+      "zoom",
+      "contrast",
+      "vertical_flip"
+    ],
+    "operations_per_image": 2,
+    "sample_with_replacement": true,
+    "selection_uses": "validation"
+  },
+  {
+    "dataset": "DDTI",
+    "model": "res34_unet",
+    "top_n": 14,
+    "operations": [
+      "identity",
+      "random_crop",
+      "gaussian_noise",
+      "horizontal_flip",
+      "haze_artifact",
+      "brightness",
+      "bilateral_filter",
+      "gamma",
+      "rotate",
+      "translate",
+      "gaussian_shadow",
+      "zoom",
+      "contrast",
+      "vertical_flip",
+      "depth_attenuation"
+    ],
+    "operations_per_image": 2,
+    "sample_with_replacement": true,
+    "selection_uses": "validation"
+  },
+  {
+    "dataset": "PKTN",
+    "model": "deeplabv3plus_resnet50",
+    "top_n": 2,
+    "operations": [
+      "identity",
+      "gaussian_noise",
+      "vertical_flip"
+    ],
+    "operations_per_image": 2,
+    "sample_with_replacement": true,
+    "selection_uses": "validation"
+  },
+  {
+    "dataset": "PKTN",
+    "model": "deeplabv3plus_resnet50",
+    "top_n": 3,
+    "operations": [
+      "identity",
+      "gaussian_noise",
+      "vertical_flip",
+      "rotate"
+    ],
+    "operations_per_image": 2,
+    "sample_with_replacement": true,
+    "selection_uses": "validation"
+  },
+  {
+    "dataset": "PKTN",
+    "model": "deeplabv3plus_resnet50",
+    "top_n": 4,
+    "operations": [
+      "identity",
+      "gaussian_noise",
+      "vertical_flip",
+      "rotate",
+      "contrast"
+    ],
+    "operations_per_image": 2,
+    "sample_with_replacement": true,
+    "selection_uses": "validation"
+  },
+  {
+    "dataset": "PKTN",
+    "model": "deeplabv3plus_resnet50",
+    "top_n": 5,
+    "operations": [
+      "identity",
+      "gaussian_noise",
+      "vertical_flip",
+      "rotate",
+      "contrast",
+      "bilateral_filter"
+    ],
+    "operations_per_image": 2,
+    "sample_with_replacement": true,
+    "selection_uses": "validation"
+  },
+  {
+    "dataset": "PKTN",
+    "model": "deeplabv3plus_resnet50",
+    "top_n": 6,
+    "operations": [
+      "identity",
+      "gaussian_noise",
+      "vertical_flip",
+      "rotate",
+      "contrast",
+      "bilateral_filter",
+      "depth_attenuation"
+    ],
+    "operations_per_image": 2,
+    "sample_with_replacement": true,
+    "selection_uses": "validation"
+  },
+  {
+    "dataset": "PKTN",
+    "model": "deeplabv3plus_resnet50",
+    "top_n": 7,
+    "operations": [
+      "identity",
+      "gaussian_noise",
+      "vertical_flip",
+      "rotate",
+      "contrast",
+      "bilateral_filter",
+      "depth_attenuation",
+      "zoom"
+    ],
+    "operations_per_image": 2,
+    "sample_with_replacement": true,
+    "selection_uses": "validation"
+  },
+  {
+    "dataset": "PKTN",
+    "model": "deeplabv3plus_resnet50",
+    "top_n": 8,
+    "operations": [
+      "identity",
+      "gaussian_noise",
+      "vertical_flip",
+      "rotate",
+      "contrast",
+      "bilateral_filter",
+      "depth_attenuation",
+      "zoom",
+      "horizontal_flip"
+    ],
+    "operations_per_image": 2,
+    "sample_with_replacement": true,
+    "selection_uses": "validation"
+  },
+  {
+    "dataset": "PKTN",
+    "model": "deeplabv3plus_resnet50",
+    "top_n": 9,
+    "operations": [
+      "identity",
+      "gaussian_noise",
+      "vertical_flip",
+      "rotate",
+      "contrast",
+      "bilateral_filter",
+      "depth_attenuation",
+      "zoom",
+      "horizontal_flip",
+      "translate"
+    ],
+    "operations_per_image": 2,
+    "sample_with_replacement": true,
+    "selection_uses": "validation"
+  },
+  {
+    "dataset": "PKTN",
+    "model": "deeplabv3plus_resnet50",
+    "top_n": 10,
+    "operations": [
+      "identity",
+      "gaussian_noise",
+      "vertical_flip",
+      "rotate",
+      "contrast",
+      "bilateral_filter",
+      "depth_attenuation",
+      "zoom",
+      "horizontal_flip",
+      "translate",
+      "brightness"
+    ],
+    "operations_per_image": 2,
+    "sample_with_replacement": true,
+    "selection_uses": "validation"
+  },
+  {
+    "dataset": "PKTN",
+    "model": "deeplabv3plus_resnet50",
+    "top_n": 11,
+    "operations": [
+      "identity",
+      "gaussian_noise",
+      "vertical_flip",
+      "rotate",
+      "contrast",
+      "bilateral_filter",
+      "depth_attenuation",
+      "zoom",
+      "horizontal_flip",
+      "translate",
+      "brightness",
+      "gamma"
+    ],
+    "operations_per_image": 2,
+    "sample_with_replacement": true,
+    "selection_uses": "validation"
+  },
+  {
+    "dataset": "PKTN",
+    "model": "deeplabv3plus_resnet50",
+    "top_n": 12,
+    "operations": [
+      "identity",
+      "gaussian_noise",
+      "vertical_flip",
+      "rotate",
+      "contrast",
+      "bilateral_filter",
+      "depth_attenuation",
+      "zoom",
+      "horizontal_flip",
+      "translate",
+      "brightness",
+      "gamma",
+      "random_crop"
+    ],
+    "operations_per_image": 2,
+    "sample_with_replacement": true,
+    "selection_uses": "validation"
+  },
+  {
+    "dataset": "PKTN",
+    "model": "deeplabv3plus_resnet50",
+    "top_n": 13,
+    "operations": [
+      "identity",
+      "gaussian_noise",
+      "vertical_flip",
+      "rotate",
+      "contrast",
+      "bilateral_filter",
+      "depth_attenuation",
+      "zoom",
+      "horizontal_flip",
+      "translate",
+      "brightness",
+      "gamma",
+      "random_crop",
+      "gaussian_shadow"
+    ],
+    "operations_per_image": 2,
+    "sample_with_replacement": true,
+    "selection_uses": "validation"
+  },
+  {
+    "dataset": "PKTN",
+    "model": "deeplabv3plus_resnet50",
+    "top_n": 14,
+    "operations": [
+      "identity",
+      "gaussian_noise",
+      "vertical_flip",
+      "rotate",
+      "contrast",
+      "bilateral_filter",
+      "depth_attenuation",
+      "zoom",
+      "horizontal_flip",
+      "translate",
+      "brightness",
+      "gamma",
+      "random_crop",
+      "gaussian_shadow",
+      "haze_artifact"
+    ],
+    "operations_per_image": 2,
+    "sample_with_replacement": true,
+    "selection_uses": "validation"
+  },
+  {
+    "dataset": "PKTN",
+    "model": "mit_b2_unet",
+    "top_n": 2,
+    "operations": [
+      "identity",
+      "rotate",
+      "random_crop"
+    ],
+    "operations_per_image": 2,
+    "sample_with_replacement": true,
+    "selection_uses": "validation"
+  },
+  {
+    "dataset": "PKTN",
+    "model": "mit_b2_unet",
+    "top_n": 3,
+    "operations": [
+      "identity",
+      "rotate",
+      "random_crop",
+      "horizontal_flip"
+    ],
+    "operations_per_image": 2,
+    "sample_with_replacement": true,
+    "selection_uses": "validation"
+  },
+  {
+    "dataset": "PKTN",
+    "model": "mit_b2_unet",
+    "top_n": 4,
+    "operations": [
+      "identity",
+      "rotate",
+      "random_crop",
+      "horizontal_flip",
+      "haze_artifact"
+    ],
+    "operations_per_image": 2,
+    "sample_with_replacement": true,
+    "selection_uses": "validation"
+  },
+  {
+    "dataset": "PKTN",
+    "model": "mit_b2_unet",
+    "top_n": 5,
+    "operations": [
+      "identity",
+      "rotate",
+      "random_crop",
+      "horizontal_flip",
+      "haze_artifact",
+      "gamma"
+    ],
+    "operations_per_image": 2,
+    "sample_with_replacement": true,
+    "selection_uses": "validation"
+  },
+  {
+    "dataset": "PKTN",
+    "model": "mit_b2_unet",
+    "top_n": 6,
+    "operations": [
+      "identity",
+      "rotate",
+      "random_crop",
+      "horizontal_flip",
+      "haze_artifact",
+      "gamma",
+      "bilateral_filter"
+    ],
+    "operations_per_image": 2,
+    "sample_with_replacement": true,
+    "selection_uses": "validation"
+  },
+  {
+    "dataset": "PKTN",
+    "model": "mit_b2_unet",
+    "top_n": 7,
+    "operations": [
+      "identity",
+      "rotate",
+      "random_crop",
+      "horizontal_flip",
+      "haze_artifact",
+      "gamma",
+      "bilateral_filter",
+      "contrast"
+    ],
+    "operations_per_image": 2,
+    "sample_with_replacement": true,
+    "selection_uses": "validation"
+  },
+  {
+    "dataset": "PKTN",
+    "model": "mit_b2_unet",
+    "top_n": 8,
+    "operations": [
+      "identity",
+      "rotate",
+      "random_crop",
+      "horizontal_flip",
+      "haze_artifact",
+      "gamma",
+      "bilateral_filter",
+      "contrast",
+      "brightness"
+    ],
+    "operations_per_image": 2,
+    "sample_with_replacement": true,
+    "selection_uses": "validation"
+  },
+  {
+    "dataset": "PKTN",
+    "model": "mit_b2_unet",
+    "top_n": 9,
+    "operations": [
+      "identity",
+      "rotate",
+      "random_crop",
+      "horizontal_flip",
+      "haze_artifact",
+      "gamma",
+      "bilateral_filter",
+      "contrast",
+      "brightness",
+      "gaussian_shadow"
+    ],
+    "operations_per_image": 2,
+    "sample_with_replacement": true,
+    "selection_uses": "validation"
+  },
+  {
+    "dataset": "PKTN",
+    "model": "mit_b2_unet",
+    "top_n": 10,
+    "operations": [
+      "identity",
+      "rotate",
+      "random_crop",
+      "horizontal_flip",
+      "haze_artifact",
+      "gamma",
+      "bilateral_filter",
+      "contrast",
+      "brightness",
+      "gaussian_shadow",
+      "depth_attenuation"
+    ],
+    "operations_per_image": 2,
+    "sample_with_replacement": true,
+    "selection_uses": "validation"
+  },
+  {
+    "dataset": "PKTN",
+    "model": "mit_b2_unet",
+    "top_n": 11,
+    "operations": [
+      "identity",
+      "rotate",
+      "random_crop",
+      "horizontal_flip",
+      "haze_artifact",
+      "gamma",
+      "bilateral_filter",
+      "contrast",
+      "brightness",
+      "gaussian_shadow",
+      "depth_attenuation",
+      "translate"
+    ],
+    "operations_per_image": 2,
+    "sample_with_replacement": true,
+    "selection_uses": "validation"
+  },
+  {
+    "dataset": "PKTN",
+    "model": "mit_b2_unet",
+    "top_n": 12,
+    "operations": [
+      "identity",
+      "rotate",
+      "random_crop",
+      "horizontal_flip",
+      "haze_artifact",
+      "gamma",
+      "bilateral_filter",
+      "contrast",
+      "brightness",
+      "gaussian_shadow",
+      "depth_attenuation",
+      "translate",
+      "vertical_flip"
+    ],
+    "operations_per_image": 2,
+    "sample_with_replacement": true,
+    "selection_uses": "validation"
+  },
+  {
+    "dataset": "PKTN",
+    "model": "mit_b2_unet",
+    "top_n": 13,
+    "operations": [
+      "identity",
+      "rotate",
+      "random_crop",
+      "horizontal_flip",
+      "haze_artifact",
+      "gamma",
+      "bilateral_filter",
+      "contrast",
+      "brightness",
+      "gaussian_shadow",
+      "depth_attenuation",
+      "translate",
+      "vertical_flip",
+      "gaussian_noise"
+    ],
+    "operations_per_image": 2,
+    "sample_with_replacement": true,
+    "selection_uses": "validation"
+  },
+  {
+    "dataset": "PKTN",
+    "model": "mit_b2_unet",
+    "top_n": 14,
+    "operations": [
+      "identity",
+      "rotate",
+      "random_crop",
+      "horizontal_flip",
+      "haze_artifact",
+      "gamma",
+      "bilateral_filter",
+      "contrast",
+      "brightness",
+      "gaussian_shadow",
+      "depth_attenuation",
+      "translate",
+      "vertical_flip",
+      "gaussian_noise",
+      "zoom"
+    ],
+    "operations_per_image": 2,
+    "sample_with_replacement": true,
+    "selection_uses": "validation"
+  },
+  {
+    "dataset": "PKTN",
+    "model": "res34_unet",
+    "top_n": 2,
+    "operations": [
+      "identity",
+      "vertical_flip",
+      "depth_attenuation"
+    ],
+    "operations_per_image": 2,
+    "sample_with_replacement": true,
+    "selection_uses": "validation"
+  },
+  {
+    "dataset": "PKTN",
+    "model": "res34_unet",
+    "top_n": 3,
+    "operations": [
+      "identity",
+      "vertical_flip",
+      "depth_attenuation",
+      "zoom"
+    ],
+    "operations_per_image": 2,
+    "sample_with_replacement": true,
+    "selection_uses": "validation"
+  },
+  {
+    "dataset": "PKTN",
+    "model": "res34_unet",
+    "top_n": 4,
+    "operations": [
+      "identity",
+      "vertical_flip",
+      "depth_attenuation",
+      "zoom",
+      "horizontal_flip"
+    ],
+    "operations_per_image": 2,
+    "sample_with_replacement": true,
+    "selection_uses": "validation"
+  },
+  {
+    "dataset": "PKTN",
+    "model": "res34_unet",
+    "top_n": 5,
+    "operations": [
+      "identity",
+      "vertical_flip",
+      "depth_attenuation",
+      "zoom",
+      "horizontal_flip",
+      "random_crop"
+    ],
+    "operations_per_image": 2,
+    "sample_with_replacement": true,
+    "selection_uses": "validation"
+  },
+  {
+    "dataset": "PKTN",
+    "model": "res34_unet",
+    "top_n": 6,
+    "operations": [
+      "identity",
+      "vertical_flip",
+      "depth_attenuation",
+      "zoom",
+      "horizontal_flip",
+      "random_crop",
+      "translate"
+    ],
+    "operations_per_image": 2,
+    "sample_with_replacement": true,
+    "selection_uses": "validation"
+  },
+  {
+    "dataset": "PKTN",
+    "model": "res34_unet",
+    "top_n": 7,
+    "operations": [
+      "identity",
+      "vertical_flip",
+      "depth_attenuation",
+      "zoom",
+      "horizontal_flip",
+      "random_crop",
+      "translate",
+      "rotate"
+    ],
+    "operations_per_image": 2,
+    "sample_with_replacement": true,
+    "selection_uses": "validation"
+  },
+  {
+    "dataset": "PKTN",
+    "model": "res34_unet",
+    "top_n": 8,
+    "operations": [
+      "identity",
+      "vertical_flip",
+      "depth_attenuation",
+      "zoom",
+      "horizontal_flip",
+      "random_crop",
+      "translate",
+      "rotate",
+      "gaussian_shadow"
+    ],
+    "operations_per_image": 2,
+    "sample_with_replacement": true,
+    "selection_uses": "validation"
+  },
+  {
+    "dataset": "PKTN",
+    "model": "res34_unet",
+    "top_n": 9,
+    "operations": [
+      "identity",
+      "vertical_flip",
+      "depth_attenuation",
+      "zoom",
+      "horizontal_flip",
+      "random_crop",
+      "translate",
+      "rotate",
+      "gaussian_shadow",
+      "gaussian_noise"
+    ],
+    "operations_per_image": 2,
+    "sample_with_replacement": true,
+    "selection_uses": "validation"
+  },
+  {
+    "dataset": "PKTN",
+    "model": "res34_unet",
+    "top_n": 10,
+    "operations": [
+      "identity",
+      "vertical_flip",
+      "depth_attenuation",
+      "zoom",
+      "horizontal_flip",
+      "random_crop",
+      "translate",
+      "rotate",
+      "gaussian_shadow",
+      "gaussian_noise",
+      "brightness"
+    ],
+    "operations_per_image": 2,
+    "sample_with_replacement": true,
+    "selection_uses": "validation"
+  },
+  {
+    "dataset": "PKTN",
+    "model": "res34_unet",
+    "top_n": 11,
+    "operations": [
+      "identity",
+      "vertical_flip",
+      "depth_attenuation",
+      "zoom",
+      "horizontal_flip",
+      "random_crop",
+      "translate",
+      "rotate",
+      "gaussian_shadow",
+      "gaussian_noise",
+      "brightness",
+      "contrast"
+    ],
+    "operations_per_image": 2,
+    "sample_with_replacement": true,
+    "selection_uses": "validation"
+  },
+  {
+    "dataset": "PKTN",
+    "model": "res34_unet",
+    "top_n": 12,
+    "operations": [
+      "identity",
+      "vertical_flip",
+      "depth_attenuation",
+      "zoom",
+      "horizontal_flip",
+      "random_crop",
+      "translate",
+      "rotate",
+      "gaussian_shadow",
+      "gaussian_noise",
+      "brightness",
+      "contrast",
+      "gamma"
+    ],
+    "operations_per_image": 2,
+    "sample_with_replacement": true,
+    "selection_uses": "validation"
+  },
+  {
+    "dataset": "PKTN",
+    "model": "res34_unet",
+    "top_n": 13,
+    "operations": [
+      "identity",
+      "vertical_flip",
+      "depth_attenuation",
+      "zoom",
+      "horizontal_flip",
+      "random_crop",
+      "translate",
+      "rotate",
+      "gaussian_shadow",
+      "gaussian_noise",
+      "brightness",
+      "contrast",
+      "gamma",
+      "bilateral_filter"
+    ],
+    "operations_per_image": 2,
+    "sample_with_replacement": true,
+    "selection_uses": "validation"
+  },
+  {
+    "dataset": "PKTN",
+    "model": "res34_unet",
+    "top_n": 14,
+    "operations": [
+      "identity",
+      "vertical_flip",
+      "depth_attenuation",
+      "zoom",
+      "horizontal_flip",
+      "random_crop",
+      "translate",
+      "rotate",
+      "gaussian_shadow",
+      "gaussian_noise",
+      "brightness",
+      "contrast",
+      "gamma",
+      "bilateral_filter",
+      "haze_artifact"
+    ],
+    "operations_per_image": 2,
+    "sample_with_replacement": true,
+    "selection_uses": "validation"
+  },
+  {
+    "dataset": "TN3K",
+    "model": "deeplabv3plus_resnet50",
+    "top_n": 2,
+    "operations": [
+      "identity",
+      "random_crop",
+      "horizontal_flip"
+    ],
+    "operations_per_image": 2,
+    "sample_with_replacement": true,
+    "selection_uses": "validation"
+  },
+  {
+    "dataset": "TN3K",
+    "model": "deeplabv3plus_resnet50",
+    "top_n": 3,
+    "operations": [
+      "identity",
+      "random_crop",
+      "horizontal_flip",
+      "translate"
+    ],
+    "operations_per_image": 2,
+    "sample_with_replacement": true,
+    "selection_uses": "validation"
+  },
+  {
+    "dataset": "TN3K",
+    "model": "deeplabv3plus_resnet50",
+    "top_n": 4,
+    "operations": [
+      "identity",
+      "random_crop",
+      "horizontal_flip",
+      "translate",
+      "rotate"
+    ],
+    "operations_per_image": 2,
+    "sample_with_replacement": true,
+    "selection_uses": "validation"
+  },
+  {
+    "dataset": "TN3K",
+    "model": "deeplabv3plus_resnet50",
+    "top_n": 5,
+    "operations": [
+      "identity",
+      "random_crop",
+      "horizontal_flip",
+      "translate",
+      "rotate",
+      "zoom"
+    ],
+    "operations_per_image": 2,
+    "sample_with_replacement": true,
+    "selection_uses": "validation"
+  },
+  {
+    "dataset": "TN3K",
+    "model": "deeplabv3plus_resnet50",
+    "top_n": 6,
+    "operations": [
+      "identity",
+      "random_crop",
+      "horizontal_flip",
+      "translate",
+      "rotate",
+      "zoom",
+      "haze_artifact"
+    ],
+    "operations_per_image": 2,
+    "sample_with_replacement": true,
+    "selection_uses": "validation"
+  },
+  {
+    "dataset": "TN3K",
+    "model": "deeplabv3plus_resnet50",
+    "top_n": 7,
+    "operations": [
+      "identity",
+      "random_crop",
+      "horizontal_flip",
+      "translate",
+      "rotate",
+      "zoom",
+      "haze_artifact",
+      "depth_attenuation"
+    ],
+    "operations_per_image": 2,
+    "sample_with_replacement": true,
+    "selection_uses": "validation"
+  },
+  {
+    "dataset": "TN3K",
+    "model": "deeplabv3plus_resnet50",
+    "top_n": 8,
+    "operations": [
+      "identity",
+      "random_crop",
+      "horizontal_flip",
+      "translate",
+      "rotate",
+      "zoom",
+      "haze_artifact",
+      "depth_attenuation",
+      "bilateral_filter"
+    ],
+    "operations_per_image": 2,
+    "sample_with_replacement": true,
+    "selection_uses": "validation"
+  },
+  {
+    "dataset": "TN3K",
+    "model": "deeplabv3plus_resnet50",
+    "top_n": 9,
+    "operations": [
+      "identity",
+      "random_crop",
+      "horizontal_flip",
+      "translate",
+      "rotate",
+      "zoom",
+      "haze_artifact",
+      "depth_attenuation",
+      "bilateral_filter",
+      "gamma"
+    ],
+    "operations_per_image": 2,
+    "sample_with_replacement": true,
+    "selection_uses": "validation"
+  },
+  {
+    "dataset": "TN3K",
+    "model": "deeplabv3plus_resnet50",
+    "top_n": 10,
+    "operations": [
+      "identity",
+      "random_crop",
+      "horizontal_flip",
+      "translate",
+      "rotate",
+      "zoom",
+      "haze_artifact",
+      "depth_attenuation",
+      "bilateral_filter",
+      "gamma",
+      "vertical_flip"
+    ],
+    "operations_per_image": 2,
+    "sample_with_replacement": true,
+    "selection_uses": "validation"
+  },
+  {
+    "dataset": "TN3K",
+    "model": "deeplabv3plus_resnet50",
+    "top_n": 11,
+    "operations": [
+      "identity",
+      "random_crop",
+      "horizontal_flip",
+      "translate",
+      "rotate",
+      "zoom",
+      "haze_artifact",
+      "depth_attenuation",
+      "bilateral_filter",
+      "gamma",
+      "vertical_flip",
+      "gaussian_noise"
+    ],
+    "operations_per_image": 2,
+    "sample_with_replacement": true,
+    "selection_uses": "validation"
+  },
+  {
+    "dataset": "TN3K",
+    "model": "deeplabv3plus_resnet50",
+    "top_n": 12,
+    "operations": [
+      "identity",
+      "random_crop",
+      "horizontal_flip",
+      "translate",
+      "rotate",
+      "zoom",
+      "haze_artifact",
+      "depth_attenuation",
+      "bilateral_filter",
+      "gamma",
+      "vertical_flip",
+      "gaussian_noise",
+      "brightness"
+    ],
+    "operations_per_image": 2,
+    "sample_with_replacement": true,
+    "selection_uses": "validation"
+  },
+  {
+    "dataset": "TN3K",
+    "model": "deeplabv3plus_resnet50",
+    "top_n": 13,
+    "operations": [
+      "identity",
+      "random_crop",
+      "horizontal_flip",
+      "translate",
+      "rotate",
+      "zoom",
+      "haze_artifact",
+      "depth_attenuation",
+      "bilateral_filter",
+      "gamma",
+      "vertical_flip",
+      "gaussian_noise",
+      "brightness",
+      "gaussian_shadow"
+    ],
+    "operations_per_image": 2,
+    "sample_with_replacement": true,
+    "selection_uses": "validation"
+  },
+  {
+    "dataset": "TN3K",
+    "model": "deeplabv3plus_resnet50",
+    "top_n": 14,
+    "operations": [
+      "identity",
+      "random_crop",
+      "horizontal_flip",
+      "translate",
+      "rotate",
+      "zoom",
+      "haze_artifact",
+      "depth_attenuation",
+      "bilateral_filter",
+      "gamma",
+      "vertical_flip",
+      "gaussian_noise",
+      "brightness",
+      "gaussian_shadow",
+      "contrast"
+    ],
+    "operations_per_image": 2,
+    "sample_with_replacement": true,
+    "selection_uses": "validation"
+  },
+  {
+    "dataset": "TN3K",
+    "model": "mit_b2_unet",
+    "top_n": 2,
+    "operations": [
+      "identity",
+      "random_crop",
+      "translate"
+    ],
+    "operations_per_image": 2,
+    "sample_with_replacement": true,
+    "selection_uses": "validation"
+  },
+  {
+    "dataset": "TN3K",
+    "model": "mit_b2_unet",
+    "top_n": 3,
+    "operations": [
+      "identity",
+      "random_crop",
+      "translate",
+      "horizontal_flip"
+    ],
+    "operations_per_image": 2,
+    "sample_with_replacement": true,
+    "selection_uses": "validation"
+  },
+  {
+    "dataset": "TN3K",
+    "model": "mit_b2_unet",
+    "top_n": 4,
+    "operations": [
+      "identity",
+      "random_crop",
+      "translate",
+      "horizontal_flip",
+      "rotate"
+    ],
+    "operations_per_image": 2,
+    "sample_with_replacement": true,
+    "selection_uses": "validation"
+  },
+  {
+    "dataset": "TN3K",
+    "model": "mit_b2_unet",
+    "top_n": 5,
+    "operations": [
+      "identity",
+      "random_crop",
+      "translate",
+      "horizontal_flip",
+      "rotate",
+      "zoom"
+    ],
+    "operations_per_image": 2,
+    "sample_with_replacement": true,
+    "selection_uses": "validation"
+  },
+  {
+    "dataset": "TN3K",
+    "model": "mit_b2_unet",
+    "top_n": 6,
+    "operations": [
+      "identity",
+      "random_crop",
+      "translate",
+      "horizontal_flip",
+      "rotate",
+      "zoom",
+      "contrast"
+    ],
+    "operations_per_image": 2,
+    "sample_with_replacement": true,
+    "selection_uses": "validation"
+  },
+  {
+    "dataset": "TN3K",
+    "model": "mit_b2_unet",
+    "top_n": 7,
+    "operations": [
+      "identity",
+      "random_crop",
+      "translate",
+      "horizontal_flip",
+      "rotate",
+      "zoom",
+      "contrast",
+      "gamma"
+    ],
+    "operations_per_image": 2,
+    "sample_with_replacement": true,
+    "selection_uses": "validation"
+  },
+  {
+    "dataset": "TN3K",
+    "model": "mit_b2_unet",
+    "top_n": 8,
+    "operations": [
+      "identity",
+      "random_crop",
+      "translate",
+      "horizontal_flip",
+      "rotate",
+      "zoom",
+      "contrast",
+      "gamma",
+      "brightness"
+    ],
+    "operations_per_image": 2,
+    "sample_with_replacement": true,
+    "selection_uses": "validation"
+  },
+  {
+    "dataset": "TN3K",
+    "model": "mit_b2_unet",
+    "top_n": 9,
+    "operations": [
+      "identity",
+      "random_crop",
+      "translate",
+      "horizontal_flip",
+      "rotate",
+      "zoom",
+      "contrast",
+      "gamma",
+      "brightness",
+      "depth_attenuation"
+    ],
+    "operations_per_image": 2,
+    "sample_with_replacement": true,
+    "selection_uses": "validation"
+  },
+  {
+    "dataset": "TN3K",
+    "model": "mit_b2_unet",
+    "top_n": 10,
+    "operations": [
+      "identity",
+      "random_crop",
+      "translate",
+      "horizontal_flip",
+      "rotate",
+      "zoom",
+      "contrast",
+      "gamma",
+      "brightness",
+      "depth_attenuation",
+      "gaussian_noise"
+    ],
+    "operations_per_image": 2,
+    "sample_with_replacement": true,
+    "selection_uses": "validation"
+  },
+  {
+    "dataset": "TN3K",
+    "model": "mit_b2_unet",
+    "top_n": 11,
+    "operations": [
+      "identity",
+      "random_crop",
+      "translate",
+      "horizontal_flip",
+      "rotate",
+      "zoom",
+      "contrast",
+      "gamma",
+      "brightness",
+      "depth_attenuation",
+      "gaussian_noise",
+      "gaussian_shadow"
+    ],
+    "operations_per_image": 2,
+    "sample_with_replacement": true,
+    "selection_uses": "validation"
+  },
+  {
+    "dataset": "TN3K",
+    "model": "mit_b2_unet",
+    "top_n": 12,
+    "operations": [
+      "identity",
+      "random_crop",
+      "translate",
+      "horizontal_flip",
+      "rotate",
+      "zoom",
+      "contrast",
+      "gamma",
+      "brightness",
+      "depth_attenuation",
+      "gaussian_noise",
+      "gaussian_shadow",
+      "haze_artifact"
+    ],
+    "operations_per_image": 2,
+    "sample_with_replacement": true,
+    "selection_uses": "validation"
+  },
+  {
+    "dataset": "TN3K",
+    "model": "mit_b2_unet",
+    "top_n": 13,
+    "operations": [
+      "identity",
+      "random_crop",
+      "translate",
+      "horizontal_flip",
+      "rotate",
+      "zoom",
+      "contrast",
+      "gamma",
+      "brightness",
+      "depth_attenuation",
+      "gaussian_noise",
+      "gaussian_shadow",
+      "haze_artifact",
+      "bilateral_filter"
+    ],
+    "operations_per_image": 2,
+    "sample_with_replacement": true,
+    "selection_uses": "validation"
+  },
+  {
+    "dataset": "TN3K",
+    "model": "mit_b2_unet",
+    "top_n": 14,
+    "operations": [
+      "identity",
+      "random_crop",
+      "translate",
+      "horizontal_flip",
+      "rotate",
+      "zoom",
+      "contrast",
+      "gamma",
+      "brightness",
+      "depth_attenuation",
+      "gaussian_noise",
+      "gaussian_shadow",
+      "haze_artifact",
+      "bilateral_filter",
+      "vertical_flip"
+    ],
+    "operations_per_image": 2,
+    "sample_with_replacement": true,
+    "selection_uses": "validation"
+  },
+  {
+    "dataset": "TN3K",
+    "model": "res34_unet",
+    "top_n": 2,
+    "operations": [
+      "identity",
+      "random_crop",
+      "haze_artifact"
+    ],
+    "operations_per_image": 2,
+    "sample_with_replacement": true,
+    "selection_uses": "validation"
+  },
+  {
+    "dataset": "TN3K",
+    "model": "res34_unet",
+    "top_n": 3,
+    "operations": [
+      "identity",
+      "random_crop",
+      "haze_artifact",
+      "rotate"
+    ],
+    "operations_per_image": 2,
+    "sample_with_replacement": true,
+    "selection_uses": "validation"
+  },
+  {
+    "dataset": "TN3K",
+    "model": "res34_unet",
+    "top_n": 4,
+    "operations": [
+      "identity",
+      "random_crop",
+      "haze_artifact",
+      "rotate",
+      "gaussian_shadow"
+    ],
+    "operations_per_image": 2,
+    "sample_with_replacement": true,
+    "selection_uses": "validation"
+  },
+  {
+    "dataset": "TN3K",
+    "model": "res34_unet",
+    "top_n": 5,
+    "operations": [
+      "identity",
+      "random_crop",
+      "haze_artifact",
+      "rotate",
+      "gaussian_shadow",
+      "translate"
+    ],
+    "operations_per_image": 2,
+    "sample_with_replacement": true,
+    "selection_uses": "validation"
+  },
+  {
+    "dataset": "TN3K",
+    "model": "res34_unet",
+    "top_n": 6,
+    "operations": [
+      "identity",
+      "random_crop",
+      "haze_artifact",
+      "rotate",
+      "gaussian_shadow",
+      "translate",
+      "horizontal_flip"
+    ],
+    "operations_per_image": 2,
+    "sample_with_replacement": true,
+    "selection_uses": "validation"
+  },
+  {
+    "dataset": "TN3K",
+    "model": "res34_unet",
+    "top_n": 7,
+    "operations": [
+      "identity",
+      "random_crop",
+      "haze_artifact",
+      "rotate",
+      "gaussian_shadow",
+      "translate",
+      "horizontal_flip",
+      "brightness"
+    ],
+    "operations_per_image": 2,
+    "sample_with_replacement": true,
+    "selection_uses": "validation"
+  },
+  {
+    "dataset": "TN3K",
+    "model": "res34_unet",
+    "top_n": 8,
+    "operations": [
+      "identity",
+      "random_crop",
+      "haze_artifact",
+      "rotate",
+      "gaussian_shadow",
+      "translate",
+      "horizontal_flip",
+      "brightness",
+      "gaussian_noise"
+    ],
+    "operations_per_image": 2,
+    "sample_with_replacement": true,
+    "selection_uses": "validation"
+  },
+  {
+    "dataset": "TN3K",
+    "model": "res34_unet",
+    "top_n": 9,
+    "operations": [
+      "identity",
+      "random_crop",
+      "haze_artifact",
+      "rotate",
+      "gaussian_shadow",
+      "translate",
+      "horizontal_flip",
+      "brightness",
+      "gaussian_noise",
+      "zoom"
+    ],
+    "operations_per_image": 2,
+    "sample_with_replacement": true,
+    "selection_uses": "validation"
+  },
+  {
+    "dataset": "TN3K",
+    "model": "res34_unet",
+    "top_n": 10,
+    "operations": [
+      "identity",
+      "random_crop",
+      "haze_artifact",
+      "rotate",
+      "gaussian_shadow",
+      "translate",
+      "horizontal_flip",
+      "brightness",
+      "gaussian_noise",
+      "zoom",
+      "gamma"
+    ],
+    "operations_per_image": 2,
+    "sample_with_replacement": true,
+    "selection_uses": "validation"
+  },
+  {
+    "dataset": "TN3K",
+    "model": "res34_unet",
+    "top_n": 11,
+    "operations": [
+      "identity",
+      "random_crop",
+      "haze_artifact",
+      "rotate",
+      "gaussian_shadow",
+      "translate",
+      "horizontal_flip",
+      "brightness",
+      "gaussian_noise",
+      "zoom",
+      "gamma",
+      "depth_attenuation"
+    ],
+    "operations_per_image": 2,
+    "sample_with_replacement": true,
+    "selection_uses": "validation"
+  },
+  {
+    "dataset": "TN3K",
+    "model": "res34_unet",
+    "top_n": 12,
+    "operations": [
+      "identity",
+      "random_crop",
+      "haze_artifact",
+      "rotate",
+      "gaussian_shadow",
+      "translate",
+      "horizontal_flip",
+      "brightness",
+      "gaussian_noise",
+      "zoom",
+      "gamma",
+      "depth_attenuation",
+      "bilateral_filter"
+    ],
+    "operations_per_image": 2,
+    "sample_with_replacement": true,
+    "selection_uses": "validation"
+  },
+  {
+    "dataset": "TN3K",
+    "model": "res34_unet",
+    "top_n": 13,
+    "operations": [
+      "identity",
+      "random_crop",
+      "haze_artifact",
+      "rotate",
+      "gaussian_shadow",
+      "translate",
+      "horizontal_flip",
+      "brightness",
+      "gaussian_noise",
+      "zoom",
+      "gamma",
+      "depth_attenuation",
+      "bilateral_filter",
+      "vertical_flip"
+    ],
+    "operations_per_image": 2,
+    "sample_with_replacement": true,
+    "selection_uses": "validation"
+  },
+  {
+    "dataset": "TN3K",
+    "model": "res34_unet",
+    "top_n": 14,
+    "operations": [
+      "identity",
+      "random_crop",
+      "haze_artifact",
+      "rotate",
+      "gaussian_shadow",
+      "translate",
+      "horizontal_flip",
+      "brightness",
+      "gaussian_noise",
+      "zoom",
+      "gamma",
+      "depth_attenuation",
+      "bilateral_filter",
+      "vertical_flip",
+      "contrast"
+    ],
+    "operations_per_image": 2,
+    "sample_with_replacement": true,
+    "selection_uses": "validation"
+  },
+  {
+    "dataset": "TNUI-2021",
+    "model": "deeplabv3plus_resnet50",
+    "top_n": 2,
+    "operations": [
+      "identity",
+      "brightness",
+      "contrast"
+    ],
+    "operations_per_image": 2,
+    "sample_with_replacement": true,
+    "selection_uses": "validation"
+  },
+  {
+    "dataset": "TNUI-2021",
+    "model": "deeplabv3plus_resnet50",
+    "top_n": 3,
+    "operations": [
+      "identity",
+      "brightness",
+      "contrast",
+      "random_crop"
+    ],
+    "operations_per_image": 2,
+    "sample_with_replacement": true,
+    "selection_uses": "validation"
+  },
+  {
+    "dataset": "TNUI-2021",
+    "model": "deeplabv3plus_resnet50",
+    "top_n": 4,
+    "operations": [
+      "identity",
+      "brightness",
+      "contrast",
+      "random_crop",
+      "haze_artifact"
+    ],
+    "operations_per_image": 2,
+    "sample_with_replacement": true,
+    "selection_uses": "validation"
+  },
+  {
+    "dataset": "TNUI-2021",
+    "model": "deeplabv3plus_resnet50",
+    "top_n": 5,
+    "operations": [
+      "identity",
+      "brightness",
+      "contrast",
+      "random_crop",
+      "haze_artifact",
+      "gaussian_shadow"
+    ],
+    "operations_per_image": 2,
+    "sample_with_replacement": true,
+    "selection_uses": "validation"
+  },
+  {
+    "dataset": "TNUI-2021",
+    "model": "deeplabv3plus_resnet50",
+    "top_n": 6,
+    "operations": [
+      "identity",
+      "brightness",
+      "contrast",
+      "random_crop",
+      "haze_artifact",
+      "gaussian_shadow",
+      "depth_attenuation"
+    ],
+    "operations_per_image": 2,
+    "sample_with_replacement": true,
+    "selection_uses": "validation"
+  },
+  {
+    "dataset": "TNUI-2021",
+    "model": "deeplabv3plus_resnet50",
+    "top_n": 7,
+    "operations": [
+      "identity",
+      "brightness",
+      "contrast",
+      "random_crop",
+      "haze_artifact",
+      "gaussian_shadow",
+      "depth_attenuation",
+      "horizontal_flip"
+    ],
+    "operations_per_image": 2,
+    "sample_with_replacement": true,
+    "selection_uses": "validation"
+  },
+  {
+    "dataset": "TNUI-2021",
+    "model": "deeplabv3plus_resnet50",
+    "top_n": 8,
+    "operations": [
+      "identity",
+      "brightness",
+      "contrast",
+      "random_crop",
+      "haze_artifact",
+      "gaussian_shadow",
+      "depth_attenuation",
+      "horizontal_flip",
+      "gamma"
+    ],
+    "operations_per_image": 2,
+    "sample_with_replacement": true,
+    "selection_uses": "validation"
+  },
+  {
+    "dataset": "TNUI-2021",
+    "model": "deeplabv3plus_resnet50",
+    "top_n": 9,
+    "operations": [
+      "identity",
+      "brightness",
+      "contrast",
+      "random_crop",
+      "haze_artifact",
+      "gaussian_shadow",
+      "depth_attenuation",
+      "horizontal_flip",
+      "gamma",
+      "bilateral_filter"
+    ],
+    "operations_per_image": 2,
+    "sample_with_replacement": true,
+    "selection_uses": "validation"
+  },
+  {
+    "dataset": "TNUI-2021",
+    "model": "deeplabv3plus_resnet50",
+    "top_n": 10,
+    "operations": [
+      "identity",
+      "brightness",
+      "contrast",
+      "random_crop",
+      "haze_artifact",
+      "gaussian_shadow",
+      "depth_attenuation",
+      "horizontal_flip",
+      "gamma",
+      "bilateral_filter",
+      "gaussian_noise"
+    ],
+    "operations_per_image": 2,
+    "sample_with_replacement": true,
+    "selection_uses": "validation"
+  },
+  {
+    "dataset": "TNUI-2021",
+    "model": "deeplabv3plus_resnet50",
+    "top_n": 11,
+    "operations": [
+      "identity",
+      "brightness",
+      "contrast",
+      "random_crop",
+      "haze_artifact",
+      "gaussian_shadow",
+      "depth_attenuation",
+      "horizontal_flip",
+      "gamma",
+      "bilateral_filter",
+      "gaussian_noise",
+      "zoom"
+    ],
+    "operations_per_image": 2,
+    "sample_with_replacement": true,
+    "selection_uses": "validation"
+  },
+  {
+    "dataset": "TNUI-2021",
+    "model": "deeplabv3plus_resnet50",
+    "top_n": 12,
+    "operations": [
+      "identity",
+      "brightness",
+      "contrast",
+      "random_crop",
+      "haze_artifact",
+      "gaussian_shadow",
+      "depth_attenuation",
+      "horizontal_flip",
+      "gamma",
+      "bilateral_filter",
+      "gaussian_noise",
+      "zoom",
+      "rotate"
+    ],
+    "operations_per_image": 2,
+    "sample_with_replacement": true,
+    "selection_uses": "validation"
+  },
+  {
+    "dataset": "TNUI-2021",
+    "model": "deeplabv3plus_resnet50",
+    "top_n": 13,
+    "operations": [
+      "identity",
+      "brightness",
+      "contrast",
+      "random_crop",
+      "haze_artifact",
+      "gaussian_shadow",
+      "depth_attenuation",
+      "horizontal_flip",
+      "gamma",
+      "bilateral_filter",
+      "gaussian_noise",
+      "zoom",
+      "rotate",
+      "translate"
+    ],
+    "operations_per_image": 2,
+    "sample_with_replacement": true,
+    "selection_uses": "validation"
+  },
+  {
+    "dataset": "TNUI-2021",
+    "model": "deeplabv3plus_resnet50",
+    "top_n": 14,
+    "operations": [
+      "identity",
+      "brightness",
+      "contrast",
+      "random_crop",
+      "haze_artifact",
+      "gaussian_shadow",
+      "depth_attenuation",
+      "horizontal_flip",
+      "gamma",
+      "bilateral_filter",
+      "gaussian_noise",
+      "zoom",
+      "rotate",
+      "translate",
+      "vertical_flip"
+    ],
+    "operations_per_image": 2,
+    "sample_with_replacement": true,
+    "selection_uses": "validation"
+  },
+  {
+    "dataset": "TNUI-2021",
+    "model": "mit_b2_unet",
+    "top_n": 2,
+    "operations": [
+      "identity",
+      "rotate",
+      "random_crop"
+    ],
+    "operations_per_image": 2,
+    "sample_with_replacement": true,
+    "selection_uses": "validation"
+  },
+  {
+    "dataset": "TNUI-2021",
+    "model": "mit_b2_unet",
+    "top_n": 3,
+    "operations": [
+      "identity",
+      "rotate",
+      "random_crop",
+      "gaussian_shadow"
+    ],
+    "operations_per_image": 2,
+    "sample_with_replacement": true,
+    "selection_uses": "validation"
+  },
+  {
+    "dataset": "TNUI-2021",
+    "model": "mit_b2_unet",
+    "top_n": 4,
+    "operations": [
+      "identity",
+      "rotate",
+      "random_crop",
+      "gaussian_shadow",
+      "depth_attenuation"
+    ],
+    "operations_per_image": 2,
+    "sample_with_replacement": true,
+    "selection_uses": "validation"
+  },
+  {
+    "dataset": "TNUI-2021",
+    "model": "mit_b2_unet",
+    "top_n": 5,
+    "operations": [
+      "identity",
+      "rotate",
+      "random_crop",
+      "gaussian_shadow",
+      "depth_attenuation",
+      "contrast"
+    ],
+    "operations_per_image": 2,
+    "sample_with_replacement": true,
+    "selection_uses": "validation"
+  },
+  {
+    "dataset": "TNUI-2021",
+    "model": "mit_b2_unet",
+    "top_n": 6,
+    "operations": [
+      "identity",
+      "rotate",
+      "random_crop",
+      "gaussian_shadow",
+      "depth_attenuation",
+      "contrast",
+      "horizontal_flip"
+    ],
+    "operations_per_image": 2,
+    "sample_with_replacement": true,
+    "selection_uses": "validation"
+  },
+  {
+    "dataset": "TNUI-2021",
+    "model": "mit_b2_unet",
+    "top_n": 7,
+    "operations": [
+      "identity",
+      "rotate",
+      "random_crop",
+      "gaussian_shadow",
+      "depth_attenuation",
+      "contrast",
+      "horizontal_flip",
+      "brightness"
+    ],
+    "operations_per_image": 2,
+    "sample_with_replacement": true,
+    "selection_uses": "validation"
+  },
+  {
+    "dataset": "TNUI-2021",
+    "model": "mit_b2_unet",
+    "top_n": 8,
+    "operations": [
+      "identity",
+      "rotate",
+      "random_crop",
+      "gaussian_shadow",
+      "depth_attenuation",
+      "contrast",
+      "horizontal_flip",
+      "brightness",
+      "zoom"
+    ],
+    "operations_per_image": 2,
+    "sample_with_replacement": true,
+    "selection_uses": "validation"
+  },
+  {
+    "dataset": "TNUI-2021",
+    "model": "mit_b2_unet",
+    "top_n": 9,
+    "operations": [
+      "identity",
+      "rotate",
+      "random_crop",
+      "gaussian_shadow",
+      "depth_attenuation",
+      "contrast",
+      "horizontal_flip",
+      "brightness",
+      "zoom",
+      "haze_artifact"
+    ],
+    "operations_per_image": 2,
+    "sample_with_replacement": true,
+    "selection_uses": "validation"
+  },
+  {
+    "dataset": "TNUI-2021",
+    "model": "mit_b2_unet",
+    "top_n": 10,
+    "operations": [
+      "identity",
+      "rotate",
+      "random_crop",
+      "gaussian_shadow",
+      "depth_attenuation",
+      "contrast",
+      "horizontal_flip",
+      "brightness",
+      "zoom",
+      "haze_artifact",
+      "bilateral_filter"
+    ],
+    "operations_per_image": 2,
+    "sample_with_replacement": true,
+    "selection_uses": "validation"
+  },
+  {
+    "dataset": "TNUI-2021",
+    "model": "mit_b2_unet",
+    "top_n": 11,
+    "operations": [
+      "identity",
+      "rotate",
+      "random_crop",
+      "gaussian_shadow",
+      "depth_attenuation",
+      "contrast",
+      "horizontal_flip",
+      "brightness",
+      "zoom",
+      "haze_artifact",
+      "bilateral_filter",
+      "gaussian_noise"
+    ],
+    "operations_per_image": 2,
+    "sample_with_replacement": true,
+    "selection_uses": "validation"
+  },
+  {
+    "dataset": "TNUI-2021",
+    "model": "mit_b2_unet",
+    "top_n": 12,
+    "operations": [
+      "identity",
+      "rotate",
+      "random_crop",
+      "gaussian_shadow",
+      "depth_attenuation",
+      "contrast",
+      "horizontal_flip",
+      "brightness",
+      "zoom",
+      "haze_artifact",
+      "bilateral_filter",
+      "gaussian_noise",
+      "gamma"
+    ],
+    "operations_per_image": 2,
+    "sample_with_replacement": true,
+    "selection_uses": "validation"
+  },
+  {
+    "dataset": "TNUI-2021",
+    "model": "mit_b2_unet",
+    "top_n": 13,
+    "operations": [
+      "identity",
+      "rotate",
+      "random_crop",
+      "gaussian_shadow",
+      "depth_attenuation",
+      "contrast",
+      "horizontal_flip",
+      "brightness",
+      "zoom",
+      "haze_artifact",
+      "bilateral_filter",
+      "gaussian_noise",
+      "gamma",
+      "vertical_flip"
+    ],
+    "operations_per_image": 2,
+    "sample_with_replacement": true,
+    "selection_uses": "validation"
+  },
+  {
+    "dataset": "TNUI-2021",
+    "model": "mit_b2_unet",
+    "top_n": 14,
+    "operations": [
+      "identity",
+      "rotate",
+      "random_crop",
+      "gaussian_shadow",
+      "depth_attenuation",
+      "contrast",
+      "horizontal_flip",
+      "brightness",
+      "zoom",
+      "haze_artifact",
+      "bilateral_filter",
+      "gaussian_noise",
+      "gamma",
+      "vertical_flip",
+      "translate"
+    ],
+    "operations_per_image": 2,
+    "sample_with_replacement": true,
+    "selection_uses": "validation"
+  },
+  {
+    "dataset": "TNUI-2021",
+    "model": "res34_unet",
+    "top_n": 2,
+    "operations": [
+      "identity",
+      "gaussian_noise",
+      "haze_artifact"
+    ],
+    "operations_per_image": 2,
+    "sample_with_replacement": true,
+    "selection_uses": "validation"
+  },
+  {
+    "dataset": "TNUI-2021",
+    "model": "res34_unet",
+    "top_n": 3,
+    "operations": [
+      "identity",
+      "gaussian_noise",
+      "haze_artifact",
+      "random_crop"
+    ],
+    "operations_per_image": 2,
+    "sample_with_replacement": true,
+    "selection_uses": "validation"
+  },
+  {
+    "dataset": "TNUI-2021",
+    "model": "res34_unet",
+    "top_n": 4,
+    "operations": [
+      "identity",
+      "gaussian_noise",
+      "haze_artifact",
+      "random_crop",
+      "depth_attenuation"
+    ],
+    "operations_per_image": 2,
+    "sample_with_replacement": true,
+    "selection_uses": "validation"
+  },
+  {
+    "dataset": "TNUI-2021",
+    "model": "res34_unet",
+    "top_n": 5,
+    "operations": [
+      "identity",
+      "gaussian_noise",
+      "haze_artifact",
+      "random_crop",
+      "depth_attenuation",
+      "contrast"
+    ],
+    "operations_per_image": 2,
+    "sample_with_replacement": true,
+    "selection_uses": "validation"
+  },
+  {
+    "dataset": "TNUI-2021",
+    "model": "res34_unet",
+    "top_n": 6,
+    "operations": [
+      "identity",
+      "gaussian_noise",
+      "haze_artifact",
+      "random_crop",
+      "depth_attenuation",
+      "contrast",
+      "zoom"
+    ],
+    "operations_per_image": 2,
+    "sample_with_replacement": true,
+    "selection_uses": "validation"
+  },
+  {
+    "dataset": "TNUI-2021",
+    "model": "res34_unet",
+    "top_n": 7,
+    "operations": [
+      "identity",
+      "gaussian_noise",
+      "haze_artifact",
+      "random_crop",
+      "depth_attenuation",
+      "contrast",
+      "zoom",
+      "vertical_flip"
+    ],
+    "operations_per_image": 2,
+    "sample_with_replacement": true,
+    "selection_uses": "validation"
+  },
+  {
+    "dataset": "TNUI-2021",
+    "model": "res34_unet",
+    "top_n": 8,
+    "operations": [
+      "identity",
+      "gaussian_noise",
+      "haze_artifact",
+      "random_crop",
+      "depth_attenuation",
+      "contrast",
+      "zoom",
+      "vertical_flip",
+      "gamma"
+    ],
+    "operations_per_image": 2,
+    "sample_with_replacement": true,
+    "selection_uses": "validation"
+  },
+  {
+    "dataset": "TNUI-2021",
+    "model": "res34_unet",
+    "top_n": 9,
+    "operations": [
+      "identity",
+      "gaussian_noise",
+      "haze_artifact",
+      "random_crop",
+      "depth_attenuation",
+      "contrast",
+      "zoom",
+      "vertical_flip",
+      "gamma",
+      "rotate"
+    ],
+    "operations_per_image": 2,
+    "sample_with_replacement": true,
+    "selection_uses": "validation"
+  },
+  {
+    "dataset": "TNUI-2021",
+    "model": "res34_unet",
+    "top_n": 10,
+    "operations": [
+      "identity",
+      "gaussian_noise",
+      "haze_artifact",
+      "random_crop",
+      "depth_attenuation",
+      "contrast",
+      "zoom",
+      "vertical_flip",
+      "gamma",
+      "rotate",
+      "translate"
+    ],
+    "operations_per_image": 2,
+    "sample_with_replacement": true,
+    "selection_uses": "validation"
+  },
+  {
+    "dataset": "TNUI-2021",
+    "model": "res34_unet",
+    "top_n": 11,
+    "operations": [
+      "identity",
+      "gaussian_noise",
+      "haze_artifact",
+      "random_crop",
+      "depth_attenuation",
+      "contrast",
+      "zoom",
+      "vertical_flip",
+      "gamma",
+      "rotate",
+      "translate",
+      "horizontal_flip"
+    ],
+    "operations_per_image": 2,
+    "sample_with_replacement": true,
+    "selection_uses": "validation"
+  },
+  {
+    "dataset": "TNUI-2021",
+    "model": "res34_unet",
+    "top_n": 12,
+    "operations": [
+      "identity",
+      "gaussian_noise",
+      "haze_artifact",
+      "random_crop",
+      "depth_attenuation",
+      "contrast",
+      "zoom",
+      "vertical_flip",
+      "gamma",
+      "rotate",
+      "translate",
+      "horizontal_flip",
+      "brightness"
+    ],
+    "operations_per_image": 2,
+    "sample_with_replacement": true,
+    "selection_uses": "validation"
+  },
+  {
+    "dataset": "TNUI-2021",
+    "model": "res34_unet",
+    "top_n": 13,
+    "operations": [
+      "identity",
+      "gaussian_noise",
+      "haze_artifact",
+      "random_crop",
+      "depth_attenuation",
+      "contrast",
+      "zoom",
+      "vertical_flip",
+      "gamma",
+      "rotate",
+      "translate",
+      "horizontal_flip",
+      "brightness",
+      "gaussian_shadow"
+    ],
+    "operations_per_image": 2,
+    "sample_with_replacement": true,
+    "selection_uses": "validation"
+  },
+  {
+    "dataset": "TNUI-2021",
+    "model": "res34_unet",
+    "top_n": 14,
+    "operations": [
+      "identity",
+      "gaussian_noise",
+      "haze_artifact",
+      "random_crop",
+      "depth_attenuation",
+      "contrast",
+      "zoom",
+      "vertical_flip",
+      "gamma",
+      "rotate",
+      "translate",
+      "horizontal_flip",
+      "brightness",
+      "gaussian_shadow",
+      "bilateral_filter"
+    ],
+    "operations_per_image": 2,
+    "sample_with_replacement": true,
+    "selection_uses": "validation"
+  },
+  {
+    "dataset": "TUCC",
+    "model": "deeplabv3plus_resnet50",
+    "top_n": 2,
+    "operations": [
+      "identity",
+      "rotate",
+      "bilateral_filter"
+    ],
+    "operations_per_image": 2,
+    "sample_with_replacement": true,
+    "selection_uses": "validation"
+  },
+  {
+    "dataset": "TUCC",
+    "model": "deeplabv3plus_resnet50",
+    "top_n": 3,
+    "operations": [
+      "identity",
+      "rotate",
+      "bilateral_filter",
+      "brightness"
+    ],
+    "operations_per_image": 2,
+    "sample_with_replacement": true,
+    "selection_uses": "validation"
+  },
+  {
+    "dataset": "TUCC",
+    "model": "deeplabv3plus_resnet50",
+    "top_n": 4,
+    "operations": [
+      "identity",
+      "rotate",
+      "bilateral_filter",
+      "brightness",
+      "vertical_flip"
+    ],
+    "operations_per_image": 2,
+    "sample_with_replacement": true,
+    "selection_uses": "validation"
+  },
+  {
+    "dataset": "TUCC",
+    "model": "deeplabv3plus_resnet50",
+    "top_n": 5,
+    "operations": [
+      "identity",
+      "rotate",
+      "bilateral_filter",
+      "brightness",
+      "vertical_flip",
+      "gamma"
+    ],
+    "operations_per_image": 2,
+    "sample_with_replacement": true,
+    "selection_uses": "validation"
+  },
+  {
+    "dataset": "TUCC",
+    "model": "deeplabv3plus_resnet50",
+    "top_n": 6,
+    "operations": [
+      "identity",
+      "rotate",
+      "bilateral_filter",
+      "brightness",
+      "vertical_flip",
+      "gamma",
+      "zoom"
+    ],
+    "operations_per_image": 2,
+    "sample_with_replacement": true,
+    "selection_uses": "validation"
+  },
+  {
+    "dataset": "TUCC",
+    "model": "deeplabv3plus_resnet50",
+    "top_n": 7,
+    "operations": [
+      "identity",
+      "rotate",
+      "bilateral_filter",
+      "brightness",
+      "vertical_flip",
+      "gamma",
+      "zoom",
+      "horizontal_flip"
+    ],
+    "operations_per_image": 2,
+    "sample_with_replacement": true,
+    "selection_uses": "validation"
+  },
+  {
+    "dataset": "TUCC",
+    "model": "deeplabv3plus_resnet50",
+    "top_n": 8,
+    "operations": [
+      "identity",
+      "rotate",
+      "bilateral_filter",
+      "brightness",
+      "vertical_flip",
+      "gamma",
+      "zoom",
+      "horizontal_flip",
+      "translate"
+    ],
+    "operations_per_image": 2,
+    "sample_with_replacement": true,
+    "selection_uses": "validation"
+  },
+  {
+    "dataset": "TUCC",
+    "model": "deeplabv3plus_resnet50",
+    "top_n": 9,
+    "operations": [
+      "identity",
+      "rotate",
+      "bilateral_filter",
+      "brightness",
+      "vertical_flip",
+      "gamma",
+      "zoom",
+      "horizontal_flip",
+      "translate",
+      "contrast"
+    ],
+    "operations_per_image": 2,
+    "sample_with_replacement": true,
+    "selection_uses": "validation"
+  },
+  {
+    "dataset": "TUCC",
+    "model": "deeplabv3plus_resnet50",
+    "top_n": 10,
+    "operations": [
+      "identity",
+      "rotate",
+      "bilateral_filter",
+      "brightness",
+      "vertical_flip",
+      "gamma",
+      "zoom",
+      "horizontal_flip",
+      "translate",
+      "contrast",
+      "depth_attenuation"
+    ],
+    "operations_per_image": 2,
+    "sample_with_replacement": true,
+    "selection_uses": "validation"
+  },
+  {
+    "dataset": "TUCC",
+    "model": "deeplabv3plus_resnet50",
+    "top_n": 11,
+    "operations": [
+      "identity",
+      "rotate",
+      "bilateral_filter",
+      "brightness",
+      "vertical_flip",
+      "gamma",
+      "zoom",
+      "horizontal_flip",
+      "translate",
+      "contrast",
+      "depth_attenuation",
+      "haze_artifact"
+    ],
+    "operations_per_image": 2,
+    "sample_with_replacement": true,
+    "selection_uses": "validation"
+  },
+  {
+    "dataset": "TUCC",
+    "model": "deeplabv3plus_resnet50",
+    "top_n": 12,
+    "operations": [
+      "identity",
+      "rotate",
+      "bilateral_filter",
+      "brightness",
+      "vertical_flip",
+      "gamma",
+      "zoom",
+      "horizontal_flip",
+      "translate",
+      "contrast",
+      "depth_attenuation",
+      "haze_artifact",
+      "gaussian_shadow"
+    ],
+    "operations_per_image": 2,
+    "sample_with_replacement": true,
+    "selection_uses": "validation"
+  },
+  {
+    "dataset": "TUCC",
+    "model": "deeplabv3plus_resnet50",
+    "top_n": 13,
+    "operations": [
+      "identity",
+      "rotate",
+      "bilateral_filter",
+      "brightness",
+      "vertical_flip",
+      "gamma",
+      "zoom",
+      "horizontal_flip",
+      "translate",
+      "contrast",
+      "depth_attenuation",
+      "haze_artifact",
+      "gaussian_shadow",
+      "random_crop"
+    ],
+    "operations_per_image": 2,
+    "sample_with_replacement": true,
+    "selection_uses": "validation"
+  },
+  {
+    "dataset": "TUCC",
+    "model": "deeplabv3plus_resnet50",
+    "top_n": 14,
+    "operations": [
+      "identity",
+      "rotate",
+      "bilateral_filter",
+      "brightness",
+      "vertical_flip",
+      "gamma",
+      "zoom",
+      "horizontal_flip",
+      "translate",
+      "contrast",
+      "depth_attenuation",
+      "haze_artifact",
+      "gaussian_shadow",
+      "random_crop",
+      "gaussian_noise"
+    ],
+    "operations_per_image": 2,
+    "sample_with_replacement": true,
+    "selection_uses": "validation"
+  },
+  {
+    "dataset": "TUCC",
+    "model": "mit_b2_unet",
+    "top_n": 2,
+    "operations": [
+      "identity",
+      "rotate",
+      "horizontal_flip"
+    ],
+    "operations_per_image": 2,
+    "sample_with_replacement": true,
+    "selection_uses": "validation"
+  },
+  {
+    "dataset": "TUCC",
+    "model": "mit_b2_unet",
+    "top_n": 3,
+    "operations": [
+      "identity",
+      "rotate",
+      "horizontal_flip",
+      "depth_attenuation"
+    ],
+    "operations_per_image": 2,
+    "sample_with_replacement": true,
+    "selection_uses": "validation"
+  },
+  {
+    "dataset": "TUCC",
+    "model": "mit_b2_unet",
+    "top_n": 4,
+    "operations": [
+      "identity",
+      "rotate",
+      "horizontal_flip",
+      "depth_attenuation",
+      "zoom"
+    ],
+    "operations_per_image": 2,
+    "sample_with_replacement": true,
+    "selection_uses": "validation"
+  },
+  {
+    "dataset": "TUCC",
+    "model": "mit_b2_unet",
+    "top_n": 5,
+    "operations": [
+      "identity",
+      "rotate",
+      "horizontal_flip",
+      "depth_attenuation",
+      "zoom",
+      "contrast"
+    ],
+    "operations_per_image": 2,
+    "sample_with_replacement": true,
+    "selection_uses": "validation"
+  },
+  {
+    "dataset": "TUCC",
+    "model": "mit_b2_unet",
+    "top_n": 6,
+    "operations": [
+      "identity",
+      "rotate",
+      "horizontal_flip",
+      "depth_attenuation",
+      "zoom",
+      "contrast",
+      "vertical_flip"
+    ],
+    "operations_per_image": 2,
+    "sample_with_replacement": true,
+    "selection_uses": "validation"
+  },
+  {
+    "dataset": "TUCC",
+    "model": "mit_b2_unet",
+    "top_n": 7,
+    "operations": [
+      "identity",
+      "rotate",
+      "horizontal_flip",
+      "depth_attenuation",
+      "zoom",
+      "contrast",
+      "vertical_flip",
+      "translate"
+    ],
+    "operations_per_image": 2,
+    "sample_with_replacement": true,
+    "selection_uses": "validation"
+  },
+  {
+    "dataset": "TUCC",
+    "model": "mit_b2_unet",
+    "top_n": 8,
+    "operations": [
+      "identity",
+      "rotate",
+      "horizontal_flip",
+      "depth_attenuation",
+      "zoom",
+      "contrast",
+      "vertical_flip",
+      "translate",
+      "gamma"
+    ],
+    "operations_per_image": 2,
+    "sample_with_replacement": true,
+    "selection_uses": "validation"
+  },
+  {
+    "dataset": "TUCC",
+    "model": "mit_b2_unet",
+    "top_n": 9,
+    "operations": [
+      "identity",
+      "rotate",
+      "horizontal_flip",
+      "depth_attenuation",
+      "zoom",
+      "contrast",
+      "vertical_flip",
+      "translate",
+      "gamma",
+      "gaussian_shadow"
+    ],
+    "operations_per_image": 2,
+    "sample_with_replacement": true,
+    "selection_uses": "validation"
+  },
+  {
+    "dataset": "TUCC",
+    "model": "mit_b2_unet",
+    "top_n": 10,
+    "operations": [
+      "identity",
+      "rotate",
+      "horizontal_flip",
+      "depth_attenuation",
+      "zoom",
+      "contrast",
+      "vertical_flip",
+      "translate",
+      "gamma",
+      "gaussian_shadow",
+      "brightness"
+    ],
+    "operations_per_image": 2,
+    "sample_with_replacement": true,
+    "selection_uses": "validation"
+  },
+  {
+    "dataset": "TUCC",
+    "model": "mit_b2_unet",
+    "top_n": 11,
+    "operations": [
+      "identity",
+      "rotate",
+      "horizontal_flip",
+      "depth_attenuation",
+      "zoom",
+      "contrast",
+      "vertical_flip",
+      "translate",
+      "gamma",
+      "gaussian_shadow",
+      "brightness",
+      "bilateral_filter"
+    ],
+    "operations_per_image": 2,
+    "sample_with_replacement": true,
+    "selection_uses": "validation"
+  },
+  {
+    "dataset": "TUCC",
+    "model": "mit_b2_unet",
+    "top_n": 12,
+    "operations": [
+      "identity",
+      "rotate",
+      "horizontal_flip",
+      "depth_attenuation",
+      "zoom",
+      "contrast",
+      "vertical_flip",
+      "translate",
+      "gamma",
+      "gaussian_shadow",
+      "brightness",
+      "bilateral_filter",
+      "haze_artifact"
+    ],
+    "operations_per_image": 2,
+    "sample_with_replacement": true,
+    "selection_uses": "validation"
+  },
+  {
+    "dataset": "TUCC",
+    "model": "mit_b2_unet",
+    "top_n": 13,
+    "operations": [
+      "identity",
+      "rotate",
+      "horizontal_flip",
+      "depth_attenuation",
+      "zoom",
+      "contrast",
+      "vertical_flip",
+      "translate",
+      "gamma",
+      "gaussian_shadow",
+      "brightness",
+      "bilateral_filter",
+      "haze_artifact",
+      "gaussian_noise"
+    ],
+    "operations_per_image": 2,
+    "sample_with_replacement": true,
+    "selection_uses": "validation"
+  },
+  {
+    "dataset": "TUCC",
+    "model": "mit_b2_unet",
+    "top_n": 14,
+    "operations": [
+      "identity",
+      "rotate",
+      "horizontal_flip",
+      "depth_attenuation",
+      "zoom",
+      "contrast",
+      "vertical_flip",
+      "translate",
+      "gamma",
+      "gaussian_shadow",
+      "brightness",
+      "bilateral_filter",
+      "haze_artifact",
+      "gaussian_noise",
+      "random_crop"
+    ],
+    "operations_per_image": 2,
+    "sample_with_replacement": true,
+    "selection_uses": "validation"
+  },
+  {
+    "dataset": "TUCC",
+    "model": "res34_unet",
+    "top_n": 2,
+    "operations": [
+      "identity",
+      "horizontal_flip",
+      "rotate"
+    ],
+    "operations_per_image": 2,
+    "sample_with_replacement": true,
+    "selection_uses": "validation"
+  },
+  {
+    "dataset": "TUCC",
+    "model": "res34_unet",
+    "top_n": 3,
+    "operations": [
+      "identity",
+      "horizontal_flip",
+      "rotate",
+      "translate"
+    ],
+    "operations_per_image": 2,
+    "sample_with_replacement": true,
+    "selection_uses": "validation"
+  },
+  {
+    "dataset": "TUCC",
+    "model": "res34_unet",
+    "top_n": 4,
+    "operations": [
+      "identity",
+      "horizontal_flip",
+      "rotate",
+      "translate",
+      "vertical_flip"
+    ],
+    "operations_per_image": 2,
+    "sample_with_replacement": true,
+    "selection_uses": "validation"
+  },
+  {
+    "dataset": "TUCC",
+    "model": "res34_unet",
+    "top_n": 5,
+    "operations": [
+      "identity",
+      "horizontal_flip",
+      "rotate",
+      "translate",
+      "vertical_flip",
+      "bilateral_filter"
+    ],
+    "operations_per_image": 2,
+    "sample_with_replacement": true,
+    "selection_uses": "validation"
+  },
+  {
+    "dataset": "TUCC",
+    "model": "res34_unet",
+    "top_n": 6,
+    "operations": [
+      "identity",
+      "horizontal_flip",
+      "rotate",
+      "translate",
+      "vertical_flip",
+      "bilateral_filter",
+      "random_crop"
+    ],
+    "operations_per_image": 2,
+    "sample_with_replacement": true,
+    "selection_uses": "validation"
+  },
+  {
+    "dataset": "TUCC",
+    "model": "res34_unet",
+    "top_n": 7,
+    "operations": [
+      "identity",
+      "horizontal_flip",
+      "rotate",
+      "translate",
+      "vertical_flip",
+      "bilateral_filter",
+      "random_crop",
+      "zoom"
+    ],
+    "operations_per_image": 2,
+    "sample_with_replacement": true,
+    "selection_uses": "validation"
+  },
+  {
+    "dataset": "TUCC",
+    "model": "res34_unet",
+    "top_n": 8,
+    "operations": [
+      "identity",
+      "horizontal_flip",
+      "rotate",
+      "translate",
+      "vertical_flip",
+      "bilateral_filter",
+      "random_crop",
+      "zoom",
+      "contrast"
+    ],
+    "operations_per_image": 2,
+    "sample_with_replacement": true,
+    "selection_uses": "validation"
+  },
+  {
+    "dataset": "TUCC",
+    "model": "res34_unet",
+    "top_n": 9,
+    "operations": [
+      "identity",
+      "horizontal_flip",
+      "rotate",
+      "translate",
+      "vertical_flip",
+      "bilateral_filter",
+      "random_crop",
+      "zoom",
+      "contrast",
+      "gaussian_shadow"
+    ],
+    "operations_per_image": 2,
+    "sample_with_replacement": true,
+    "selection_uses": "validation"
+  },
+  {
+    "dataset": "TUCC",
+    "model": "res34_unet",
+    "top_n": 10,
+    "operations": [
+      "identity",
+      "horizontal_flip",
+      "rotate",
+      "translate",
+      "vertical_flip",
+      "bilateral_filter",
+      "random_crop",
+      "zoom",
+      "contrast",
+      "gaussian_shadow",
+      "depth_attenuation"
+    ],
+    "operations_per_image": 2,
+    "sample_with_replacement": true,
+    "selection_uses": "validation"
+  },
+  {
+    "dataset": "TUCC",
+    "model": "res34_unet",
+    "top_n": 11,
+    "operations": [
+      "identity",
+      "horizontal_flip",
+      "rotate",
+      "translate",
+      "vertical_flip",
+      "bilateral_filter",
+      "random_crop",
+      "zoom",
+      "contrast",
+      "gaussian_shadow",
+      "depth_attenuation",
+      "gamma"
+    ],
+    "operations_per_image": 2,
+    "sample_with_replacement": true,
+    "selection_uses": "validation"
+  },
+  {
+    "dataset": "TUCC",
+    "model": "res34_unet",
+    "top_n": 12,
+    "operations": [
+      "identity",
+      "horizontal_flip",
+      "rotate",
+      "translate",
+      "vertical_flip",
+      "bilateral_filter",
+      "random_crop",
+      "zoom",
+      "contrast",
+      "gaussian_shadow",
+      "depth_attenuation",
+      "gamma",
+      "haze_artifact"
+    ],
+    "operations_per_image": 2,
+    "sample_with_replacement": true,
+    "selection_uses": "validation"
+  },
+  {
+    "dataset": "TUCC",
+    "model": "res34_unet",
+    "top_n": 13,
+    "operations": [
+      "identity",
+      "horizontal_flip",
+      "rotate",
+      "translate",
+      "vertical_flip",
+      "bilateral_filter",
+      "random_crop",
+      "zoom",
+      "contrast",
+      "gaussian_shadow",
+      "depth_attenuation",
+      "gamma",
+      "haze_artifact",
+      "brightness"
+    ],
+    "operations_per_image": 2,
+    "sample_with_replacement": true,
+    "selection_uses": "validation"
+  },
+  {
+    "dataset": "TUCC",
+    "model": "res34_unet",
+    "top_n": 14,
+    "operations": [
+      "identity",
+      "horizontal_flip",
+      "rotate",
+      "translate",
+      "vertical_flip",
+      "bilateral_filter",
+      "random_crop",
+      "zoom",
+      "contrast",
+      "gaussian_shadow",
+      "depth_attenuation",
+      "gamma",
+      "haze_artifact",
+      "brightness",
+      "gaussian_noise"
+    ],
+    "operations_per_image": 2,
+    "sample_with_replacement": true,
+    "selection_uses": "validation"
+  },
+  {
+    "dataset": "ThyroidXL",
+    "model": "deeplabv3plus_resnet50",
+    "top_n": 2,
+    "operations": [
+      "identity",
+      "random_crop",
+      "rotate"
+    ],
+    "operations_per_image": 2,
+    "sample_with_replacement": true,
+    "selection_uses": "validation"
+  },
+  {
+    "dataset": "ThyroidXL",
+    "model": "deeplabv3plus_resnet50",
+    "top_n": 3,
+    "operations": [
+      "identity",
+      "random_crop",
+      "rotate",
+      "translate"
+    ],
+    "operations_per_image": 2,
+    "sample_with_replacement": true,
+    "selection_uses": "validation"
+  },
+  {
+    "dataset": "ThyroidXL",
+    "model": "deeplabv3plus_resnet50",
+    "top_n": 4,
+    "operations": [
+      "identity",
+      "random_crop",
+      "rotate",
+      "translate",
+      "zoom"
+    ],
+    "operations_per_image": 2,
+    "sample_with_replacement": true,
+    "selection_uses": "validation"
+  },
+  {
+    "dataset": "ThyroidXL",
+    "model": "deeplabv3plus_resnet50",
+    "top_n": 5,
+    "operations": [
+      "identity",
+      "random_crop",
+      "rotate",
+      "translate",
+      "zoom",
+      "horizontal_flip"
+    ],
+    "operations_per_image": 2,
+    "sample_with_replacement": true,
+    "selection_uses": "validation"
+  },
+  {
+    "dataset": "ThyroidXL",
+    "model": "deeplabv3plus_resnet50",
+    "top_n": 6,
+    "operations": [
+      "identity",
+      "random_crop",
+      "rotate",
+      "translate",
+      "zoom",
+      "horizontal_flip",
+      "vertical_flip"
+    ],
+    "operations_per_image": 2,
+    "sample_with_replacement": true,
+    "selection_uses": "validation"
+  },
+  {
+    "dataset": "ThyroidXL",
+    "model": "deeplabv3plus_resnet50",
+    "top_n": 7,
+    "operations": [
+      "identity",
+      "random_crop",
+      "rotate",
+      "translate",
+      "zoom",
+      "horizontal_flip",
+      "vertical_flip",
+      "gaussian_noise"
+    ],
+    "operations_per_image": 2,
+    "sample_with_replacement": true,
+    "selection_uses": "validation"
+  },
+  {
+    "dataset": "ThyroidXL",
+    "model": "deeplabv3plus_resnet50",
+    "top_n": 8,
+    "operations": [
+      "identity",
+      "random_crop",
+      "rotate",
+      "translate",
+      "zoom",
+      "horizontal_flip",
+      "vertical_flip",
+      "gaussian_noise",
+      "bilateral_filter"
+    ],
+    "operations_per_image": 2,
+    "sample_with_replacement": true,
+    "selection_uses": "validation"
+  },
+  {
+    "dataset": "ThyroidXL",
+    "model": "deeplabv3plus_resnet50",
+    "top_n": 9,
+    "operations": [
+      "identity",
+      "random_crop",
+      "rotate",
+      "translate",
+      "zoom",
+      "horizontal_flip",
+      "vertical_flip",
+      "gaussian_noise",
+      "bilateral_filter",
+      "contrast"
+    ],
+    "operations_per_image": 2,
+    "sample_with_replacement": true,
+    "selection_uses": "validation"
+  },
+  {
+    "dataset": "ThyroidXL",
+    "model": "deeplabv3plus_resnet50",
+    "top_n": 10,
+    "operations": [
+      "identity",
+      "random_crop",
+      "rotate",
+      "translate",
+      "zoom",
+      "horizontal_flip",
+      "vertical_flip",
+      "gaussian_noise",
+      "bilateral_filter",
+      "contrast",
+      "haze_artifact"
+    ],
+    "operations_per_image": 2,
+    "sample_with_replacement": true,
+    "selection_uses": "validation"
+  },
+  {
+    "dataset": "ThyroidXL",
+    "model": "deeplabv3plus_resnet50",
+    "top_n": 11,
+    "operations": [
+      "identity",
+      "random_crop",
+      "rotate",
+      "translate",
+      "zoom",
+      "horizontal_flip",
+      "vertical_flip",
+      "gaussian_noise",
+      "bilateral_filter",
+      "contrast",
+      "haze_artifact",
+      "gaussian_shadow"
+    ],
+    "operations_per_image": 2,
+    "sample_with_replacement": true,
+    "selection_uses": "validation"
+  },
+  {
+    "dataset": "ThyroidXL",
+    "model": "deeplabv3plus_resnet50",
+    "top_n": 12,
+    "operations": [
+      "identity",
+      "random_crop",
+      "rotate",
+      "translate",
+      "zoom",
+      "horizontal_flip",
+      "vertical_flip",
+      "gaussian_noise",
+      "bilateral_filter",
+      "contrast",
+      "haze_artifact",
+      "gaussian_shadow",
+      "brightness"
+    ],
+    "operations_per_image": 2,
+    "sample_with_replacement": true,
+    "selection_uses": "validation"
+  },
+  {
+    "dataset": "ThyroidXL",
+    "model": "deeplabv3plus_resnet50",
+    "top_n": 13,
+    "operations": [
+      "identity",
+      "random_crop",
+      "rotate",
+      "translate",
+      "zoom",
+      "horizontal_flip",
+      "vertical_flip",
+      "gaussian_noise",
+      "bilateral_filter",
+      "contrast",
+      "haze_artifact",
+      "gaussian_shadow",
+      "brightness",
+      "gamma"
+    ],
+    "operations_per_image": 2,
+    "sample_with_replacement": true,
+    "selection_uses": "validation"
+  },
+  {
+    "dataset": "ThyroidXL",
+    "model": "deeplabv3plus_resnet50",
+    "top_n": 14,
+    "operations": [
+      "identity",
+      "random_crop",
+      "rotate",
+      "translate",
+      "zoom",
+      "horizontal_flip",
+      "vertical_flip",
+      "gaussian_noise",
+      "bilateral_filter",
+      "contrast",
+      "haze_artifact",
+      "gaussian_shadow",
+      "brightness",
+      "gamma",
+      "depth_attenuation"
+    ],
+    "operations_per_image": 2,
+    "sample_with_replacement": true,
+    "selection_uses": "validation"
+  },
+  {
+    "dataset": "ThyroidXL",
+    "model": "mit_b2_unet",
+    "top_n": 2,
+    "operations": [
+      "identity",
+      "rotate",
+      "random_crop"
+    ],
+    "operations_per_image": 2,
+    "sample_with_replacement": true,
+    "selection_uses": "validation"
+  },
+  {
+    "dataset": "ThyroidXL",
+    "model": "mit_b2_unet",
+    "top_n": 3,
+    "operations": [
+      "identity",
+      "rotate",
+      "random_crop",
+      "horizontal_flip"
+    ],
+    "operations_per_image": 2,
+    "sample_with_replacement": true,
+    "selection_uses": "validation"
+  },
+  {
+    "dataset": "ThyroidXL",
+    "model": "mit_b2_unet",
+    "top_n": 4,
+    "operations": [
+      "identity",
+      "rotate",
+      "random_crop",
+      "horizontal_flip",
+      "translate"
+    ],
+    "operations_per_image": 2,
+    "sample_with_replacement": true,
+    "selection_uses": "validation"
+  },
+  {
+    "dataset": "ThyroidXL",
+    "model": "mit_b2_unet",
+    "top_n": 5,
+    "operations": [
+      "identity",
+      "rotate",
+      "random_crop",
+      "horizontal_flip",
+      "translate",
+      "zoom"
+    ],
+    "operations_per_image": 2,
+    "sample_with_replacement": true,
+    "selection_uses": "validation"
+  },
+  {
+    "dataset": "ThyroidXL",
+    "model": "mit_b2_unet",
+    "top_n": 6,
+    "operations": [
+      "identity",
+      "rotate",
+      "random_crop",
+      "horizontal_flip",
+      "translate",
+      "zoom",
+      "bilateral_filter"
+    ],
+    "operations_per_image": 2,
+    "sample_with_replacement": true,
+    "selection_uses": "validation"
+  },
+  {
+    "dataset": "ThyroidXL",
+    "model": "mit_b2_unet",
+    "top_n": 7,
+    "operations": [
+      "identity",
+      "rotate",
+      "random_crop",
+      "horizontal_flip",
+      "translate",
+      "zoom",
+      "bilateral_filter",
+      "vertical_flip"
+    ],
+    "operations_per_image": 2,
+    "sample_with_replacement": true,
+    "selection_uses": "validation"
+  },
+  {
+    "dataset": "ThyroidXL",
+    "model": "mit_b2_unet",
+    "top_n": 8,
+    "operations": [
+      "identity",
+      "rotate",
+      "random_crop",
+      "horizontal_flip",
+      "translate",
+      "zoom",
+      "bilateral_filter",
+      "vertical_flip",
+      "gaussian_noise"
+    ],
+    "operations_per_image": 2,
+    "sample_with_replacement": true,
+    "selection_uses": "validation"
+  },
+  {
+    "dataset": "ThyroidXL",
+    "model": "mit_b2_unet",
+    "top_n": 9,
+    "operations": [
+      "identity",
+      "rotate",
+      "random_crop",
+      "horizontal_flip",
+      "translate",
+      "zoom",
+      "bilateral_filter",
+      "vertical_flip",
+      "gaussian_noise",
+      "haze_artifact"
+    ],
+    "operations_per_image": 2,
+    "sample_with_replacement": true,
+    "selection_uses": "validation"
+  },
+  {
+    "dataset": "ThyroidXL",
+    "model": "mit_b2_unet",
+    "top_n": 10,
+    "operations": [
+      "identity",
+      "rotate",
+      "random_crop",
+      "horizontal_flip",
+      "translate",
+      "zoom",
+      "bilateral_filter",
+      "vertical_flip",
+      "gaussian_noise",
+      "haze_artifact",
+      "contrast"
+    ],
+    "operations_per_image": 2,
+    "sample_with_replacement": true,
+    "selection_uses": "validation"
+  },
+  {
+    "dataset": "ThyroidXL",
+    "model": "mit_b2_unet",
+    "top_n": 11,
+    "operations": [
+      "identity",
+      "rotate",
+      "random_crop",
+      "horizontal_flip",
+      "translate",
+      "zoom",
+      "bilateral_filter",
+      "vertical_flip",
+      "gaussian_noise",
+      "haze_artifact",
+      "contrast",
+      "gamma"
+    ],
+    "operations_per_image": 2,
+    "sample_with_replacement": true,
+    "selection_uses": "validation"
+  },
+  {
+    "dataset": "ThyroidXL",
+    "model": "mit_b2_unet",
+    "top_n": 12,
+    "operations": [
+      "identity",
+      "rotate",
+      "random_crop",
+      "horizontal_flip",
+      "translate",
+      "zoom",
+      "bilateral_filter",
+      "vertical_flip",
+      "gaussian_noise",
+      "haze_artifact",
+      "contrast",
+      "gamma",
+      "gaussian_shadow"
+    ],
+    "operations_per_image": 2,
+    "sample_with_replacement": true,
+    "selection_uses": "validation"
+  },
+  {
+    "dataset": "ThyroidXL",
+    "model": "mit_b2_unet",
+    "top_n": 13,
+    "operations": [
+      "identity",
+      "rotate",
+      "random_crop",
+      "horizontal_flip",
+      "translate",
+      "zoom",
+      "bilateral_filter",
+      "vertical_flip",
+      "gaussian_noise",
+      "haze_artifact",
+      "contrast",
+      "gamma",
+      "gaussian_shadow",
+      "brightness"
+    ],
+    "operations_per_image": 2,
+    "sample_with_replacement": true,
+    "selection_uses": "validation"
+  },
+  {
+    "dataset": "ThyroidXL",
+    "model": "mit_b2_unet",
+    "top_n": 14,
+    "operations": [
+      "identity",
+      "rotate",
+      "random_crop",
+      "horizontal_flip",
+      "translate",
+      "zoom",
+      "bilateral_filter",
+      "vertical_flip",
+      "gaussian_noise",
+      "haze_artifact",
+      "contrast",
+      "gamma",
+      "gaussian_shadow",
+      "brightness",
+      "depth_attenuation"
+    ],
+    "operations_per_image": 2,
+    "sample_with_replacement": true,
+    "selection_uses": "validation"
+  },
+  {
+    "dataset": "ThyroidXL",
+    "model": "res34_unet",
+    "top_n": 2,
+    "operations": [
+      "identity",
+      "rotate",
+      "zoom"
+    ],
+    "operations_per_image": 2,
+    "sample_with_replacement": true,
+    "selection_uses": "validation"
+  },
+  {
+    "dataset": "ThyroidXL",
+    "model": "res34_unet",
+    "top_n": 3,
+    "operations": [
+      "identity",
+      "rotate",
+      "zoom",
+      "gaussian_noise"
+    ],
+    "operations_per_image": 2,
+    "sample_with_replacement": true,
+    "selection_uses": "validation"
+  },
+  {
+    "dataset": "ThyroidXL",
+    "model": "res34_unet",
+    "top_n": 4,
+    "operations": [
+      "identity",
+      "rotate",
+      "zoom",
+      "gaussian_noise",
+      "random_crop"
+    ],
+    "operations_per_image": 2,
+    "sample_with_replacement": true,
+    "selection_uses": "validation"
+  },
+  {
+    "dataset": "ThyroidXL",
+    "model": "res34_unet",
+    "top_n": 5,
+    "operations": [
+      "identity",
+      "rotate",
+      "zoom",
+      "gaussian_noise",
+      "random_crop",
+      "translate"
+    ],
+    "operations_per_image": 2,
+    "sample_with_replacement": true,
+    "selection_uses": "validation"
+  },
+  {
+    "dataset": "ThyroidXL",
+    "model": "res34_unet",
+    "top_n": 6,
+    "operations": [
+      "identity",
+      "rotate",
+      "zoom",
+      "gaussian_noise",
+      "random_crop",
+      "translate",
+      "horizontal_flip"
+    ],
+    "operations_per_image": 2,
+    "sample_with_replacement": true,
+    "selection_uses": "validation"
+  },
+  {
+    "dataset": "ThyroidXL",
+    "model": "res34_unet",
+    "top_n": 7,
+    "operations": [
+      "identity",
+      "rotate",
+      "zoom",
+      "gaussian_noise",
+      "random_crop",
+      "translate",
+      "horizontal_flip",
+      "vertical_flip"
+    ],
+    "operations_per_image": 2,
+    "sample_with_replacement": true,
+    "selection_uses": "validation"
+  },
+  {
+    "dataset": "ThyroidXL",
+    "model": "res34_unet",
+    "top_n": 8,
+    "operations": [
+      "identity",
+      "rotate",
+      "zoom",
+      "gaussian_noise",
+      "random_crop",
+      "translate",
+      "horizontal_flip",
+      "vertical_flip",
+      "haze_artifact"
+    ],
+    "operations_per_image": 2,
+    "sample_with_replacement": true,
+    "selection_uses": "validation"
+  },
+  {
+    "dataset": "ThyroidXL",
+    "model": "res34_unet",
+    "top_n": 9,
+    "operations": [
+      "identity",
+      "rotate",
+      "zoom",
+      "gaussian_noise",
+      "random_crop",
+      "translate",
+      "horizontal_flip",
+      "vertical_flip",
+      "haze_artifact",
+      "bilateral_filter"
+    ],
+    "operations_per_image": 2,
+    "sample_with_replacement": true,
+    "selection_uses": "validation"
+  },
+  {
+    "dataset": "ThyroidXL",
+    "model": "res34_unet",
+    "top_n": 10,
+    "operations": [
+      "identity",
+      "rotate",
+      "zoom",
+      "gaussian_noise",
+      "random_crop",
+      "translate",
+      "horizontal_flip",
+      "vertical_flip",
+      "haze_artifact",
+      "bilateral_filter",
+      "brightness"
+    ],
+    "operations_per_image": 2,
+    "sample_with_replacement": true,
+    "selection_uses": "validation"
+  },
+  {
+    "dataset": "ThyroidXL",
+    "model": "res34_unet",
+    "top_n": 11,
+    "operations": [
+      "identity",
+      "rotate",
+      "zoom",
+      "gaussian_noise",
+      "random_crop",
+      "translate",
+      "horizontal_flip",
+      "vertical_flip",
+      "haze_artifact",
+      "bilateral_filter",
+      "brightness",
+      "contrast"
+    ],
+    "operations_per_image": 2,
+    "sample_with_replacement": true,
+    "selection_uses": "validation"
+  },
+  {
+    "dataset": "ThyroidXL",
+    "model": "res34_unet",
+    "top_n": 12,
+    "operations": [
+      "identity",
+      "rotate",
+      "zoom",
+      "gaussian_noise",
+      "random_crop",
+      "translate",
+      "horizontal_flip",
+      "vertical_flip",
+      "haze_artifact",
+      "bilateral_filter",
+      "brightness",
+      "contrast",
+      "gaussian_shadow"
+    ],
+    "operations_per_image": 2,
+    "sample_with_replacement": true,
+    "selection_uses": "validation"
+  },
+  {
+    "dataset": "ThyroidXL",
+    "model": "res34_unet",
+    "top_n": 13,
+    "operations": [
+      "identity",
+      "rotate",
+      "zoom",
+      "gaussian_noise",
+      "random_crop",
+      "translate",
+      "horizontal_flip",
+      "vertical_flip",
+      "haze_artifact",
+      "bilateral_filter",
+      "brightness",
+      "contrast",
+      "gaussian_shadow",
+      "gamma"
+    ],
+    "operations_per_image": 2,
+    "sample_with_replacement": true,
+    "selection_uses": "validation"
+  },
+  {
+    "dataset": "ThyroidXL",
+    "model": "res34_unet",
+    "top_n": 14,
+    "operations": [
+      "identity",
+      "rotate",
+      "zoom",
+      "gaussian_noise",
+      "random_crop",
+      "translate",
+      "horizontal_flip",
+      "vertical_flip",
+      "haze_artifact",
+      "bilateral_filter",
+      "brightness",
+      "contrast",
+      "gaussian_shadow",
+      "gamma",
+      "depth_attenuation"
+    ],
+    "operations_per_image": 2,
+    "sample_with_replacement": true,
+    "selection_uses": "validation"
+  }
+]

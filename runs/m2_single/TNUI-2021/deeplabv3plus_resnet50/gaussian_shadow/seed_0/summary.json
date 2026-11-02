@@ -1,0 +1,39 @@
+{
+  "metric_protocol": "per_image_sigmoid05_v2",
+  "dataset": "TNUI-2021",
+  "model": "deeplabv3plus_resnet50",
+  "augmentation": "gaussian_shadow",
+  "seed": 0,
+  "epochs": 50,
+  "scheduler_epochs": 200,
+  "train_samples": 966,
+  "val_samples": 276,
+  "train_source_samples": {
+    "TNUI-2021": 966
+  },
+  "val_source_samples": {
+    "TNUI-2021": 276
+  },
+  "balanced_source_sampling": false,
+  "batch_size": 128,
+  "effective_batch_size": 128,
+  "image_size": 224,
+  "learning_rate": 0.000277414,
+  "weight_decay": 0.000343856,
+  "dropout": 0.454402,
+  "pretrained": true,
+  "top_n": null,
+  "source_datasets": [
+    "TNUI-2021"
+  ],
+  "target_dataset": null,
+  "validation_selection": "validation",
+  "split_manifest": "manifests/metric_v2/splits.csv",
+  "scan_mask_manifest": "manifests/metric_v2/scan_masks.csv",
+  "device": "cuda",
+  "best_dice": 0.7432922157643487,
+  "total_seconds": 633.6447046000976,
+  "checkpoint": "checkpoints/m2_single/TNUI-2021/deeplabv3plus_resnet50/gaussian_shadow/seed_0/best.pt",
+  "log": "runs/m2_single/TNUI-2021/deeplabv3plus_resnet50/gaussian_shadow/seed_0/train_log.csv",
+  "max_cuda_memory_mb_last_epoch": 9068.19189453125
+}

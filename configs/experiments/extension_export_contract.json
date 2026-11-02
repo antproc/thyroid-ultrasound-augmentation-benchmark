@@ -1,0 +1,64 @@
+{
+  "implementation": "src/thyroid_augmentation/extension/evaluate.py",
+  "required_in_domain_runs": 1080,
+  "required_splits_per_run": [
+    "val",
+    "test"
+  ],
+  "checkpoint": "Best checkpoint selected by the original training validation metric, not by test and not reselected using the later per-image export.",
+  "per_image_required_columns": [
+    "run_id",
+    "dataset",
+    "split",
+    "model",
+    "strategy",
+    "configuration_id",
+    "seed",
+    "sample_id",
+    "group_id",
+    "group_unit",
+    "case_id",
+    "clip_id",
+    "dice",
+    "iou",
+    "tp",
+    "fp",
+    "fn",
+    "tn",
+    "target_pixels",
+    "predicted_pixels",
+    "evaluated_height",
+    "evaluated_width"
+  ],
+  "group_policy": "Patient/group IDs must come from documented metadata; unknown IDs stay unknown. Do not label image IDs as patients.",
+  "key": [
+    "run_id",
+    "split",
+    "sample_id"
+  ],
+  "metric_definition": {
+    "prediction": "sigmoid(logits) > 0.5",
+    "target": "Final prepared binary mask; same evaluation preprocessing for every strategy.",
+    "epsilon": 1e-07,
+    "dice": "(2*tp + epsilon)/(2*tp + fp + fn + epsilon)",
+    "iou": "(tp + epsilon)/(tp + fp + fn + epsilon)",
+    "empty_prediction_and_target": "Dice=1, IoU=1",
+    "pixel_count_type": "nonnegative integer",
+    "stored_precision": "Unrounded numeric values; rounding only for final presentation."
+  },
+  "canonical_export_policy": "Tables, figures and paired tests must use the same versioned per-image export. Re-inference creates a new version rather than silently replacing one consumer's data.",
+  "cache_identity_must_include": [
+    "manifest_sha256",
+    "dataset",
+    "split",
+    "sample_ids",
+    "preprocessing_hash",
+    "image_size"
+  ],
+  "ood": {
+    "models": "Retain all seeds of baseline, single-best, best TrivialAugment, best RandAugment.",
+    "export": "Per-image Dice/IoU and pixel counts on each planned target test split, with source/target dataset, strategy, seed and target patient/group IDs.",
+    "comparison": "Paired on identical target images; never choose models from target test performance."
+  },
+  "best_checkpoint_deletion_allowed": false
+}

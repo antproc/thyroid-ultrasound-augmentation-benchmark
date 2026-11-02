@@ -1,0 +1,13 @@
+name: mit_b2_unet
+architecture: Unet
+encoder: mit_b2
+encoder_weights: imagenet
+encoder_depth: 5
+decoder_channels: [256, 128, 64, 32, 16]
+decoder_use_norm: batchnorm
+decoder_attention_type: null
+decoder_interpolation: nearest
+in_channels: 3
+classes: 1
+activation: null
+aux_params: null

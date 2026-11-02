@@ -1,0 +1,39 @@
+{
+  "metric_protocol": "per_image_sigmoid05_v2",
+  "dataset": "TNUI-2021",
+  "model": "mit_b2_unet",
+  "augmentation": "trivial:identity,rotate,random_crop,gaussian_shadow,depth_attenuation,contrast,horizontal_flip,brightness,zoom,haze_artifact,bilateral_filter,gaussian_noise",
+  "seed": 0,
+  "epochs": 50,
+  "scheduler_epochs": 200,
+  "train_samples": 966,
+  "val_samples": 276,
+  "train_source_samples": {
+    "TNUI-2021": 966
+  },
+  "val_source_samples": {
+    "TNUI-2021": 276
+  },
+  "balanced_source_sampling": false,
+  "batch_size": 128,
+  "effective_batch_size": 128,
+  "image_size": 224,
+  "learning_rate": 0.000277414,
+  "weight_decay": 0.000343856,
+  "dropout": 0.454402,
+  "pretrained": true,
+  "top_n": 11,
+  "source_datasets": [
+    "TNUI-2021"
+  ],
+  "target_dataset": null,
+  "validation_selection": "validation",
+  "split_manifest": "manifests/metric_v2/splits.csv",
+  "scan_mask_manifest": "manifests/metric_v2/scan_masks.csv",
+  "device": "cuda",
+  "best_dice": 0.82468239931842,
+  "total_seconds": 773.1745168999769,
+  "checkpoint": "checkpoints/m2_ta/TNUI-2021/mit_b2_unet/top11_453327225acc/seed_0/best.pt",
+  "log": "runs/m2_ta/TNUI-2021/mit_b2_unet/top11_453327225acc/seed_0/train_log.csv",
+  "max_cuda_memory_mb_last_epoch": 12930.0029296875
+}

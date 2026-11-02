@@ -1,0 +1,7 @@
+name: unet_efficientnet_b0
+architecture: Unet
+encoder: efficientnet-b0
+encoder_weights: null
+in_channels: 3
+classes: 1
+primary_reproduction_model: true

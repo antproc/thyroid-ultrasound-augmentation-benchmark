@@ -1,0 +1,39 @@
+{
+  "metric_protocol": "per_image_sigmoid05_v2",
+  "dataset": "PKTN",
+  "model": "res34_unet",
+  "augmentation": "trivial:identity,vertical_flip,depth_attenuation,zoom,horizontal_flip,random_crop",
+  "seed": 0,
+  "epochs": 50,
+  "scheduler_epochs": 200,
+  "train_samples": 603,
+  "val_samples": 201,
+  "train_source_samples": {
+    "PKTN": 603
+  },
+  "val_source_samples": {
+    "PKTN": 201
+  },
+  "balanced_source_sampling": false,
+  "batch_size": 128,
+  "effective_batch_size": 128,
+  "image_size": 224,
+  "learning_rate": 0.000277414,
+  "weight_decay": 0.000343856,
+  "dropout": 0.454402,
+  "pretrained": true,
+  "top_n": 5,
+  "source_datasets": [
+    "PKTN"
+  ],
+  "target_dataset": null,
+  "validation_selection": "validation",
+  "split_manifest": "manifests/metric_v2/splits.csv",
+  "scan_mask_manifest": "manifests/metric_v2/scan_masks.csv",
+  "device": "cuda",
+  "best_dice": 0.5016337635841772,
+  "total_seconds": 279.46551469992846,
+  "checkpoint": "checkpoints/m2_ta/PKTN/res34_unet/top05_4fcb1bf00d5b/seed_0/best.pt",
+  "log": "runs/m2_ta/PKTN/res34_unet/top05_4fcb1bf00d5b/seed_0/train_log.csv",
+  "max_cuda_memory_mb_last_epoch": 5864.625
+}

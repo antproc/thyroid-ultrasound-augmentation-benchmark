@@ -1,0 +1,7 @@
+name: res34_unet
+architecture: Unet
+encoder: resnet34
+encoder_weights: null
+in_channels: 3
+classes: 1
+primary_reproduction_model: false

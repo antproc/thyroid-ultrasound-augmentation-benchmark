@@ -1,0 +1,12 @@
+name: DDTI
+aliases:
+  - ddti
+  - tdid
+required_clean_folder: VSE_CLEAN
+pairing:
+  image_suffix: _image
+  mask_suffix: _mask
+grouping:
+  primary_group: case_id
+  panel_id_from_filename: true
+  notes: Multiple DDTI panels from one case must not be treated as independent patients.

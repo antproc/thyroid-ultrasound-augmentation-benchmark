@@ -1,0 +1,82 @@
+from __future__ import annotations
+
+import hashlib
+import json
+import shutil
+
+from thyroid_augmentation.extension.common import SPLITS, digest, read_csv, write_csv, write_json
+from thyroid_augmentation.extension.evaluate import infer_rows, run_id, validate_export, verify_backup
+from thyroid_augmentation.training.metrics import METRIC_PROTOCOL, require_protocol
+from thyroid_augmentation.trivial_extension.pipeline import OUTPUT, fingerprint
+
+BACKUP = "results/extension_trivialaugment_backup"
+
+def export_best(root, config, summary):
+    import torch
+    from pathlib import Path
+    from thyroid_augmentation.extension.models import build_model
+
+    identity = run_id(config)
+    out, backup = root / OUTPUT / "per_image" / identity, root / BACKUP / "per_image" / identity
+    checkpoint_path, log = Path(summary["checkpoint"]), Path(summary["log"])
+    manifest = read_csv(root / SPLITS)
+    sources = {split: [r for r in manifest if r["dataset"] == config["dataset"] and r["split"] == split]
+               for split in ("val", "test")}
+    hashes = {"checkpoint_sha256": digest(checkpoint_path), "manifest_sha256": digest(root / SPLITS),
+              "log_sha256": digest(log), "summary_sha256": digest(log.with_name("summary.json")),
+              "pipeline_sha256": hashlib.sha256(json.dumps(fingerprint(root), sort_keys=True).encode()).hexdigest()}
+    if (out / "complete.json").exists():
+        receipt = json.loads((out / "complete.json").read_text())
+        if receipt["source_hashes"] != hashes:
+            raise ValueError("TA export inputs changed; refusing overwrite.")
+        for split, expected in sources.items():
+            rows = read_csv(out / f"{split}.csv")
+            validate_export(rows, expected, config, split)
+            if any(r["strategy"] != "trivialaugment" or int(r["top_n"]) != config["top_n"] for r in rows):
+                raise ValueError("Wrong TA strategy/Top-N export label.")
+        verify_backup(out, backup, receipt)
+        return receipt
+    if not torch.cuda.is_available():
+        raise RuntimeError("CUDA required for TA inference.")
+    checkpoint = torch.load(checkpoint_path, map_location="cpu", weights_only=True)
+    if config.get("metric_protocol") == METRIC_PROTOCOL:
+        require_protocol(checkpoint, str(checkpoint_path))
+        require_protocol(summary, "TA export summary")
+    for field in ("phase", "dataset", "model", "augmentation", "seed", "top_n"):
+        if checkpoint["config"][field] != config[field]:
+            raise ValueError(f"TA checkpoint identity mismatch: {field}")
+    model = build_model(root, config["model"], pretrained=False).cuda()
+    model.load_state_dict(checkpoint["model"], strict=True)
+    aggregates = {}
+    for split, expected in sources.items():
+        rows = infer_rows(root, config, model, expected, split, config["batch_size"])
+        for row in rows:
+            row.update(strategy="trivialaugment", top_n=config["top_n"])
+        aggregates[split] = validate_export(rows, expected, config, split)
+        write_csv(out / f"{split}.csv", rows)
+        validate_export(read_csv(out / f"{split}.csv"), expected, config, split)
+    metadata = {"run_id": identity, "config": checkpoint["config"], "source_hashes": hashes,
+                "selected_epoch": int(checkpoint["epoch"]) + 1, "training_selection_dice": summary["best_dice"],
+                "policy": {"top_n": config["top_n"], "operations": config["augmentation"].split(":", 1)[1].split(","),
+                           "operations_per_image": 2, "sampling": "with replacement", "selection_uses": "validation"},
+                "metric_definition": "Per-image sigmoid(logits)>0.5; Dice/IoU from integer TP/FP/FN/TN; epsilon=1e-7",
+                "validation_selection": checkpoint.get("metric_protocol", "legacy_raw_logits_dice"),
+                "precision": "float32", "inference_batch_size": config["batch_size"], "aggregates": aggregates}
+    write_json(out / "metadata.json", metadata)
+    write_json(out / "training_summary.json", summary)
+    shutil.copyfile(log, out / "train_log.csv")
+    files = {name: digest(out / name) for name in ("val.csv", "test.csv", "metadata.json", "training_summary.json", "train_log.csv")}
+    receipt = {"status": "complete_exports_and_local_backup_verified", "source_hashes": hashes,
+               "files": files, "aggregates": aggregates, "backup": backup.relative_to(root).as_posix(), "backup_on_same_disk": True}
+    backup.mkdir(parents=True, exist_ok=True)
+    for name, sha in files.items():
+        temporary = backup / (name + ".tmp")
+        shutil.copyfile(out / name, temporary)
+        if digest(temporary) != sha:
+            raise ValueError("TA backup checksum mismatch.")
+        temporary.replace(backup / name)
+    write_json(out / "complete.json", receipt)
+    verify_backup(out, backup, receipt)
+    del model, checkpoint
+    torch.cuda.empty_cache()
+    return receipt

@@ -1,0 +1,56 @@
+{
+  "status": "prepared",
+  "samples": 14021,
+  "raw_manifest_sha256": "e653a8bdc5f7e7510225d837121fcaa6552f9c5e8c6460978ead4277d5138088",
+  "manifest_sha256": "b0865505df3b053c49afc8e4616d663b7531cdee10bf43ffa1f5396120aaff67",
+  "scan_manifest_sha256": "34909f622ff42bbc6d97f572ad60adf3b933c8af9ce624be5a5d182e200f965b",
+  "audit_sha256": "50d908a74aa2e2f982d6fe967add90687a5c8b39de775d8efa772a170ad5ace7",
+  "source_data_modified": false,
+  "geometry_repairs": [
+    {
+      "dataset": "PKTN",
+      "sample_id": "pktn_Img_477",
+      "split": "train",
+      "source_mask_size": [
+        768,
+        576
+      ],
+      "prepared_mask_size": [
+        720,
+        576
+      ],
+      "method": "nearest_768x576_to_720x576",
+      "source_modified": false
+    },
+    {
+      "dataset": "PKTN",
+      "sample_id": "pktn_Img_481",
+      "split": "train",
+      "source_mask_size": [
+        768,
+        576
+      ],
+      "prepared_mask_size": [
+        720,
+        576
+      ],
+      "method": "nearest_768x576_to_720x576",
+      "source_modified": false
+    }
+  ],
+  "geometry_assumption": "For two known PKTN pairs only, scale the binary mask proportionally to image dimensions using nearest neighbor; original coordinate mapping is not independently established.",
+  "counts": {
+    "PKTN/train": 603,
+    "PKTN/val": 201,
+    "PKTN/test": 201,
+    "TNUI-2021/test": 139,
+    "TNUI-2021/train": 966,
+    "TNUI-2021/val": 276,
+    "ThyroidXL/train": 7633,
+    "ThyroidXL/test": 2094,
+    "ThyroidXL/val": 1908
+  },
+  "empty_target_masks": 0,
+  "scan_mask_method": "gray > 5, identical to the original TN3K/DDTI procedure",
+  "duplicate_policy": "No deduplication; frozen source splits retained."
+}

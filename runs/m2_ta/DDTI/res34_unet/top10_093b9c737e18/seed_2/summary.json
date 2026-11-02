@@ -1,0 +1,39 @@
+{
+  "metric_protocol": "per_image_sigmoid05_v2",
+  "dataset": "DDTI",
+  "model": "res34_unet",
+  "augmentation": "trivial:identity,random_crop,gaussian_noise,horizontal_flip,haze_artifact,brightness,bilateral_filter,gamma,rotate,translate,gaussian_shadow",
+  "seed": 2,
+  "epochs": 50,
+  "scheduler_epochs": 200,
+  "train_samples": 278,
+  "val_samples": 102,
+  "train_source_samples": {
+    "DDTI": 278
+  },
+  "val_source_samples": {
+    "DDTI": 102
+  },
+  "balanced_source_sampling": false,
+  "batch_size": 128,
+  "effective_batch_size": 128,
+  "image_size": 224,
+  "learning_rate": 0.000277414,
+  "weight_decay": 0.000343856,
+  "dropout": 0.454402,
+  "pretrained": true,
+  "top_n": 10,
+  "source_datasets": [
+    "DDTI"
+  ],
+  "target_dataset": null,
+  "validation_selection": "validation",
+  "split_manifest": "manifests/metric_v2/splits.csv",
+  "scan_mask_manifest": "manifests/metric_v2/scan_masks.csv",
+  "device": "cuda",
+  "best_dice": 0.6873177128584195,
+  "total_seconds": 135.5755032002926,
+  "checkpoint": "checkpoints/m2_ta/DDTI/res34_unet/top10_093b9c737e18/seed_2/best.pt",
+  "log": "runs/m2_ta/DDTI/res34_unet/top10_093b9c737e18/seed_2/train_log.csv",
+  "max_cuda_memory_mb_last_epoch": 5864.625
+}

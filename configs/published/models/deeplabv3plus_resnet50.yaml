@@ -1,0 +1,15 @@
+name: deeplabv3plus_resnet50
+architecture: DeepLabV3Plus
+encoder: resnet50
+encoder_weights: imagenet
+encoder_depth: 5
+encoder_output_stride: 16
+decoder_channels: 256
+decoder_atrous_rates: [12, 24, 36]
+decoder_aspp_separable: true
+decoder_aspp_dropout: 0.5
+upsampling: 4
+in_channels: 3
+classes: 1
+activation: null
+aux_params: null

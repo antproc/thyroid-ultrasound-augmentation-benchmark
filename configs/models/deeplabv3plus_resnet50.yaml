@@ -1,0 +1,7 @@
+name: deeplabv3plus_resnet50
+architecture: DeepLabV3Plus
+encoder: resnet50
+encoder_weights: null
+in_channels: 3
+classes: 1
+primary_reproduction_model: false

@@ -1,0 +1,17 @@
+augmentations:
+  - None
+  - Speckle reduction
+  - Brightness
+  - Contrast
+  - Depth attenuation
+  - Gamma
+  - Gaussian noise
+  - Gaussian shadow
+  - Haze artifact
+  - Horizontal flip
+  - Vertical flip
+  - Random crop
+  - Rotate
+  - Translate
+  - Zoom
+source: Revisiting Data Augmentation for Ultrasound Images upstream order

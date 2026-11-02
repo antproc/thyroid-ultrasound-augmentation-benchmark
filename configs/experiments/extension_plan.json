@@ -1,0 +1,156 @@
+{
+  "protocol": {
+    "name": "extension_plan",
+    "models": [
+      "res34_unet",
+      "deeplabv3plus_resnet50",
+      "mit_b2_unet"
+    ],
+    "datasets": [
+      "ThyroidXL",
+      "PKTN",
+      "TNUI-2021"
+    ],
+    "seeds": [
+      0,
+      1,
+      2
+    ],
+    "epochs": 50,
+    "scheduler_epochs": 200,
+    "image_size": 224,
+    "batch_size": 128,
+    "effective_batch_size": 128,
+    "learning_rate": 0.000277414,
+    "weight_decay": 0.000343856,
+    "dropout": 0.454402,
+    "pretrained": true,
+    "individual_augmentations": {
+      "include_none": true,
+      "source_order_config": "configs/augmentations/upstream_order.yaml"
+    },
+    "trivialaugment": {
+      "operations_per_image": 2,
+      "include_identity": true,
+      "sample_with_replacement": true,
+      "top_n_values": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14
+      ]
+    },
+    "randaugment": {
+      "n_values": [
+        2,
+        3,
+        4
+      ],
+      "m_values": [
+        5,
+        10,
+        15,
+        30
+      ],
+      "bins": 31
+    },
+    "selection_uses": "validation",
+    "test_set_uses": "final_reporting"
+  },
+  "split_seed": 0,
+  "split_manifest": "manifests/extension/splits_raw.csv",
+  "manifest_sha256": "e653a8bdc5f7e7510225d837121fcaa6552f9c5e8c6460978ead4277d5138088",
+  "source_config_sha256": "ed4936a79c3aa24bc3d4e74f7c4e56f372f320131740450e25e8cc8776a27b51",
+  "duplicate_policy": "Keep all source rows and known duplicate images; no hash grouping or deduplication.",
+  "split_policy": {
+    "ThyroidXL": "Keep official test; 20 percent of train patient IDs to validation, original TN3K group split algorithm, seed 0.",
+    "TNUI-2021": "Preserve supplied train/val/test, including known overlap.",
+    "PKTN": "Original DDTI 60/20/20 algorithm, seed 0, IMAGE IDs only; patients unknown."
+  },
+  "split_counts": [
+    {
+      "dataset": "PKTN",
+      "split": "train",
+      "images": 603,
+      "groups": 603,
+      "group_unit": "image_id_not_patient"
+    },
+    {
+      "dataset": "PKTN",
+      "split": "val",
+      "images": 201,
+      "groups": 201,
+      "group_unit": "image_id_not_patient"
+    },
+    {
+      "dataset": "PKTN",
+      "split": "test",
+      "images": 201,
+      "groups": 201,
+      "group_unit": "image_id_not_patient"
+    },
+    {
+      "dataset": "TNUI-2021",
+      "split": "train",
+      "images": 966,
+      "groups": 966,
+      "group_unit": "image_id_not_patient"
+    },
+    {
+      "dataset": "TNUI-2021",
+      "split": "val",
+      "images": 276,
+      "groups": 276,
+      "group_unit": "image_id_not_patient"
+    },
+    {
+      "dataset": "TNUI-2021",
+      "split": "test",
+      "images": 139,
+      "groups": 139,
+      "group_unit": "image_id_not_patient"
+    },
+    {
+      "dataset": "ThyroidXL",
+      "split": "train",
+      "images": 7633,
+      "groups": 2683,
+      "group_unit": "patient_id"
+    },
+    {
+      "dataset": "ThyroidXL",
+      "split": "val",
+      "images": 1908,
+      "groups": 671,
+      "group_unit": "patient_id"
+    },
+    {
+      "dataset": "ThyroidXL",
+      "split": "test",
+      "images": 2094,
+      "groups": 739,
+      "group_unit": "patient_id"
+    }
+  ],
+  "runs_per_dataset": {
+    "single": 135,
+    "trivialaugment": 117,
+    "randaugment": 108,
+    "total": 360
+  },
+  "total_new_training_runs": 1080,
+  "limitations": [
+    "Patient independence cannot be established for PKTN or TNUI-2021 from the available identifiers.",
+    "Known duplicate images within and across the source splits are retained.",
+    "The raw manifest is not the final preprocessed training manifest."
+  ]
+}
