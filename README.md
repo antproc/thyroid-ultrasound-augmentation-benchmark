@@ -12,7 +12,6 @@ Code and fixed inputs for the manuscript *Data Augmentation Has Modest In-Domain
 - `metadata/`: validation rankings, TrivialAugment pools, RandAugment magnitude mapping, the 216 validation-selected checkpoints with SHA-256
 - `per_image/`: per-image test Dice of the selected models averaged over seeds (in-domain and all 30 cross-dataset transfers)
 - `tests/`: unit tests
-- Statistics, tables and figures of the manuscript are not part of this repository
 
 ## Setup
 
