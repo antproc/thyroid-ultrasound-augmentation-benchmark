@@ -1,0 +1,13 @@
+name: ThyroidXL
+full_name: ThyroidXL
+source: https://huggingface.co/datasets/hunglc007/ThyroidXL
+access: provider terms; not redistributed here
+images_used: 11635 images from 4093 patients
+expected_layout: data/thyroidxl/{train,test}/images/<id>.png and data/thyroidxl/{train,test}/masks/<id>.png (as distributed)
+sample_id: thyroidxl_<released file name>
+preprocessing: scripts/01_prepare_pktn_tnui2021_thyroidxl.py writes binary masks (0/255) into prepared_data/extension/ThyroidXL/<hash>.png and records SHA-256 of every source and prepared file
+scan_mask: scan_masks/extension/ThyroidXL/<hash>.png (created by the same script)
+group_unit: patient identifier from the released file names
+split: released test kept (2094 images, 739 patients); 20 percent of the development patients to validation, seed 0 (configs/experiments/pktn_tnui2021_thyroidxl_splits.json)
+split_manifest: manifests/pktn_tnui2021_thyroidxl/splits_prepared.csv
+counts: {train: 7633, val: 1908, test: 2094}

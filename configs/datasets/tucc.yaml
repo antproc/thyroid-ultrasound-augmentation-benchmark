@@ -1,0 +1,13 @@
+name: TUCC
+full_name: Stanford Thyroid Ultrasound Cine-clip (Stanford Thyroid)
+source: https://aimi.stanford.edu/datasets/thyroid-ultrasound-cine-clip
+access: provider terms (Stanford AIMI); not redistributed here
+images_used: 10218 frames from 105 convex-probe clips
+expected_layout: data/tucc/prepared/<sample_id>_image.png and data/tucc/prepared/<sample_id>_mask.png
+sample_id: tucc_seq<clip>_frame<frame>_idx<index>
+preprocessing: one PNG per annotated frame exported from the HDF5 release; grayscale image, binary mask (0/255); the on-screen border outside the ultrasound image cropped identically from image and mask
+scan_mask: scan_masks_arxiv/tucc/<sample_id>_scan_mask.png (fan-shaped active region, procedure of Tupper and Gagne; python -m thyroid_augmentation prepare-tucc-scan-masks)
+group_unit: clip (one patient per test clip; see manuscript Section 2.1)
+split: clip-level, 75/9/21 clips (configs/experiments/tucc_tn3k_ddti_splits.json)
+split_manifest: manifests/tucc_tn3k_ddti/splits.csv
+counts: {train: 7441, val: 807, test: 1970}

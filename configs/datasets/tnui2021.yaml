@@ -1,0 +1,13 @@
+name: TNUI-2021
+full_name: TNUI-2021 (N-Net)
+source: https://github.com/zxg3017/TNUI-2021-
+access: provider terms; not redistributed here
+images_used: 1381
+expected_layout: data/tnui2021/{train,val,test}/images/<id>.png and data/tnui2021/{train,val,test}/masks/<id>.png (as distributed)
+sample_id: tnui_<split>_<id>
+preprocessing: scripts/01_prepare_pktn_tnui2021_thyroidxl.py writes binary masks (0/255) into prepared_data/extension/TNUI-2021/<hash>.png and records SHA-256 of every source and prepared file
+scan_mask: scan_masks/extension/TNUI-2021/<hash>.png (created by the same script)
+group_unit: image (no patient identifiers)
+split: released train/val/test partition preserved (configs/experiments/pktn_tnui2021_thyroidxl_splits.json)
+split_manifest: manifests/pktn_tnui2021_thyroidxl/splits_prepared.csv
+counts: {train: 966, val: 276, test: 139}

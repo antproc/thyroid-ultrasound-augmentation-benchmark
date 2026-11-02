@@ -1,0 +1,24 @@
+# Local datasets and derived image data
+data/
+prepared_data/
+scan_masks/
+scan_masks_arxiv/
+
+# Model binaries are distributed outside Git
+checkpoints/
+
+# Reproduction outputs
+results/
+logs/
+runs/**/test_*.json
+runs/**/test_per_image.csv
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+*.egg-info/
+build/
+dist/

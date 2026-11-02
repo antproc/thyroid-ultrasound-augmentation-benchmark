@@ -1,0 +1,13 @@
+name: DDTI
+full_name: Digital Database of Thyroid Ultrasound Images
+source: http://cimalab.unal.edu.co/?lang=en&mod=project&id=31
+access: provider terms; not redistributed here
+images_used: 466 image panels from 380 cases (70 cases with several panels)
+expected_layout: data/ddti/prepared/<sample_id>_image.png and data/ddti/prepared/<sample_id>_mask.png
+sample_id: ddti_<case>_<panel>
+preprocessing: nodule contours of the released XML annotations rasterized to binary masks (0/255); case images that contain several panels split into one image per panel (manifests/tucc_tn3k_ddti/ddti_panel_map.csv); the border outside the ultrasound image cropped identically from image and mask
+scan_mask: scan_masks/ddti/<sample_id>_scan_mask.png (intensity above 5; python -m thyroid_augmentation prepare-scan-masks)
+group_unit: case (all panels of a case in one partition and one cluster)
+split: case-level 60/20/20, seed 0 (configs/experiments/tucc_tn3k_ddti_splits.json)
+split_manifest: manifests/tucc_tn3k_ddti/splits.csv
+counts: {train: 278, val: 102, test: 86}

@@ -1,0 +1,52 @@
+{
+  "implementation": "src/thyroid_augmentation/extension/evaluate.py",
+  "required_splits_per_run": [
+    "val",
+    "test"
+  ],
+  "per_image_required_columns": [
+    "run_id",
+    "dataset",
+    "split",
+    "model",
+    "strategy",
+    "configuration_id",
+    "seed",
+    "sample_id",
+    "group_id",
+    "group_unit",
+    "case_id",
+    "clip_id",
+    "dice",
+    "iou",
+    "tp",
+    "fp",
+    "fn",
+    "tn",
+    "target_pixels",
+    "predicted_pixels",
+    "evaluated_height",
+    "evaluated_width"
+  ],
+  "key": [
+    "run_id",
+    "split",
+    "sample_id"
+  ],
+  "metric_definition": {
+    "prediction": "sigmoid(logits) > 0.5",
+    "epsilon": 1e-07,
+    "dice": "(2*tp + epsilon)/(2*tp + fp + fn + epsilon)",
+    "iou": "(tp + epsilon)/(tp + fp + fn + epsilon)",
+    "empty_prediction_and_target": "Dice=1, IoU=1",
+    "pixel_count_type": "nonnegative integer"
+  },
+  "cache_identity_must_include": [
+    "manifest_sha256",
+    "dataset",
+    "split",
+    "sample_ids",
+    "preprocessing_hash",
+    "image_size"
+  ]
+}

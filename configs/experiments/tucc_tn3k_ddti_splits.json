@@ -1,0 +1,23 @@
+{
+  "split_manifest": "manifests/tucc_tn3k_ddti/splits.csv",
+  "scan_mask_manifest": "manifests/tucc_tn3k_ddti/scan_masks.csv",
+  "pair_inventory": "manifests/tucc_tn3k_ddti/pairs.csv",
+  "ddti_panel_map": "manifests/tucc_tn3k_ddti/ddti_panel_map.csv",
+  "split_policy": {
+    "TUCC": "Frames of the 105 convex-probe clips listed in external/ultrasound-augmentation/usaugment-experiments/scripts/data/thyroid_ultrasound_cineclip/patients.csv (the clip selection of Tupper and Gagne). Clip-level GroupShuffleSplit: 20 percent of clips to test, then 10 percent of the remaining clips to validation, random_state 42 in both steps; 75/9/21 clips.",
+    "TN3K": "Released test set kept as test. Released trainval images split by image: group ids sorted, shuffled with random.Random(0), 20 percent to validation.",
+    "DDTI": "Case-level three-way split: case ids sorted, shuffled with random.Random(0), 20 percent of cases to test, next 20 percent to validation, rest to training. All panels of a case stay in one partition."
+  },
+  "duplicate_policy": "Keep all source rows and known duplicate images; no hash grouping or deduplication.",
+  "split_counts": [
+    {"dataset": "TUCC", "split": "train", "images": 7441, "groups": 75, "group_unit": "clip"},
+    {"dataset": "TUCC", "split": "val", "images": 807, "groups": 9, "group_unit": "clip"},
+    {"dataset": "TUCC", "split": "test", "images": 1970, "groups": 21, "group_unit": "clip"},
+    {"dataset": "TN3K", "split": "train", "images": 2303, "groups": 2303, "group_unit": "image_id_not_patient"},
+    {"dataset": "TN3K", "split": "val", "images": 576, "groups": 576, "group_unit": "image_id_not_patient"},
+    {"dataset": "TN3K", "split": "test", "images": 614, "groups": 614, "group_unit": "image_id_not_patient"},
+    {"dataset": "DDTI", "split": "train", "images": 278, "groups": 228, "group_unit": "case"},
+    {"dataset": "DDTI", "split": "val", "images": 102, "groups": 76, "group_unit": "case"},
+    {"dataset": "DDTI", "split": "test", "images": 86, "groups": 76, "group_unit": "case"}
+  ]
+}

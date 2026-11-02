@@ -1,0 +1,36 @@
+name: benchmark
+models:
+  - res34_unet
+  - deeplabv3plus_resnet50
+  - mit_b2_unet
+datasets:
+  - TUCC
+  - TN3K
+  - DDTI
+  - PKTN
+  - TNUI-2021
+  - ThyroidXL
+seeds: [0, 1, 2]
+epochs: 50
+scheduler_epochs: 200
+image_size: 224
+batch_size: 128
+effective_batch_size: 128
+learning_rate: 0.000277414
+weight_decay: 0.000343856
+dropout: 0.454402
+pretrained: true
+individual_augmentations:
+  include_none: true
+  source_order_config: configs/augmentations/upstream_order.yaml
+trivialaugment:
+  operations_per_image: 2
+  include_identity: true
+  sample_with_replacement: true
+  top_n_values: [2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14]
+randaugment:
+  n_values: [2, 3, 4]
+  m_values: [5, 10, 15, 30]
+  bins: 31
+selection_uses: validation
+test_set_uses: final_reporting

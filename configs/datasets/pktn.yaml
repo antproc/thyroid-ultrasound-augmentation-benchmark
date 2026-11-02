@@ -1,0 +1,13 @@
+name: PKTN
+full_name: PKTN (CLIP-TNseg)
+source: https://github.com/jayxjsun/CLIP-TNseg
+access: provider terms; not redistributed here
+images_used: 1005
+expected_layout: data/pktn/images/Img_<n>.jpg and data/pktn/masks/Img_<n>.jpg (as distributed)
+sample_id: pktn_Img_<n>
+preprocessing: scripts/01_prepare_pktn_tnui2021_thyroidxl.py binarizes the JPEG masks (threshold 127) into prepared_data/extension/PKTN/<hash>.png and records SHA-256 of every source and prepared file; two masks whose size differed from the image (pktn_Img_477, pktn_Img_481) were rescaled to the image size
+scan_mask: scan_masks/extension/PKTN/<hash>.png (created by the same script)
+group_unit: image (no patient identifiers)
+split: image-level 60/20/20, seed 0 (configs/experiments/pktn_tnui2021_thyroidxl_splits.json)
+split_manifest: manifests/pktn_tnui2021_thyroidxl/splits_prepared.csv
+counts: {train: 603, val: 201, test: 201}

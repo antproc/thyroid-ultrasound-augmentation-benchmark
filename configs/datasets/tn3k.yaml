@@ -1,0 +1,13 @@
+name: TN3K
+full_name: TN3K thyroid nodule segmentation dataset
+source: https://github.com/haifangong/TRFE-Net-for-thyroid-nodule-segmentation
+access: provider terms; not redistributed here
+images_used: 3493 (2879 released trainval, 614 released test)
+expected_layout: data/tn3k/prepared/<sample_id>_image.png and data/tn3k/prepared/<sample_id>_mask.png
+sample_id: tn3k_trainval_<id> or tn3k_test_<id> (released file numbers)
+preprocessing: released JPEG images and masks converted to PNG; grayscale image, binary mask (0/255, threshold 127); the border outside the ultrasound image cropped identically from image and mask
+scan_mask: scan_masks/tn3k/<sample_id>_scan_mask.png (intensity above 5; python -m thyroid_augmentation prepare-scan-masks)
+group_unit: image (no patient identifiers)
+split: released test kept; trainval split by image 80/20, seed 0 (configs/experiments/tucc_tn3k_ddti_splits.json)
+split_manifest: manifests/tucc_tn3k_ddti/splits.csv
+counts: {train: 2303, val: 576, test: 614}

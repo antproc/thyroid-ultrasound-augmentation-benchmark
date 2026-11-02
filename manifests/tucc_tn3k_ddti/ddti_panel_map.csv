@@ -1,0 +1,381 @@
+dataset,case_id,panel_count,sample_ids,requires_manual_review,reason
+DDTI,0001,2,ddti_0001_1;ddti_0001_2,True,multiple derived panels for one DDTI case
+DDTI,0002,1,ddti_0002_1,False,single panel
+DDTI,0003,1,ddti_0003_1,False,single panel
+DDTI,0004,1,ddti_0004_1,False,single panel
+DDTI,0005,1,ddti_0005_1,False,single panel
+DDTI,0006,1,ddti_0006_1,False,single panel
+DDTI,0007,1,ddti_0007_1,False,single panel
+DDTI,0008,1,ddti_0008_1,False,single panel
+DDTI,0009,1,ddti_0009_1,False,single panel
+DDTI,0010,1,ddti_0010_1,False,single panel
+DDTI,0011,1,ddti_0011_1,False,single panel
+DDTI,0012,1,ddti_0012_1,False,single panel
+DDTI,0013,1,ddti_0013_1,False,single panel
+DDTI,0014,1,ddti_0014_1,False,single panel
+DDTI,0015,1,ddti_0015_1,False,single panel
+DDTI,0016,1,ddti_0016_1,False,single panel
+DDTI,0017,1,ddti_0017_1,False,single panel
+DDTI,0018,1,ddti_0018_1,False,single panel
+DDTI,0019,1,ddti_0019_1,False,single panel
+DDTI,0020,1,ddti_0020_1,False,single panel
+DDTI,0021,1,ddti_0021_1,False,single panel
+DDTI,0022,1,ddti_0022_1,False,single panel
+DDTI,0023,1,ddti_0023_1,False,single panel
+DDTI,0024,1,ddti_0024_1,False,single panel
+DDTI,0025,1,ddti_0025_1,False,single panel
+DDTI,0026,1,ddti_0026_1,False,single panel
+DDTI,0027,1,ddti_0027_1,False,single panel
+DDTI,0028,1,ddti_0028_1,False,single panel
+DDTI,0029,1,ddti_0029_1,False,single panel
+DDTI,0030,1,ddti_0030_1,False,single panel
+DDTI,0031,1,ddti_0031_1,False,single panel
+DDTI,0032,1,ddti_0032_1,False,single panel
+DDTI,0033,1,ddti_0033_1,False,single panel
+DDTI,0034,1,ddti_0034_1,False,single panel
+DDTI,0035,1,ddti_0035_1,False,single panel
+DDTI,0036,1,ddti_0036_1,False,single panel
+DDTI,0038,1,ddti_0038_1,False,single panel
+DDTI,0039,1,ddti_0039_1,False,single panel
+DDTI,0040,1,ddti_0040_1,False,single panel
+DDTI,0041,1,ddti_0041_1,False,single panel
+DDTI,0042,1,ddti_0042_1,False,single panel
+DDTI,0043,1,ddti_0043_1,False,single panel
+DDTI,0044,1,ddti_0044_1,False,single panel
+DDTI,0045,1,ddti_0045_1,False,single panel
+DDTI,0046,1,ddti_0046_1,False,single panel
+DDTI,0047,1,ddti_0047_1,False,single panel
+DDTI,0048,1,ddti_0048_1,False,single panel
+DDTI,0049,1,ddti_0049_1,False,single panel
+DDTI,0050,1,ddti_0050_1,False,single panel
+DDTI,0051,1,ddti_0051_1,False,single panel
+DDTI,0052,1,ddti_0052_1,False,single panel
+DDTI,0053,1,ddti_0053_1,False,single panel
+DDTI,0055,1,ddti_0055_1,False,single panel
+DDTI,0056,1,ddti_0056_1,False,single panel
+DDTI,0057,1,ddti_0057_1,False,single panel
+DDTI,0058,2,ddti_0058_1;ddti_0058_2,True,multiple derived panels for one DDTI case
+DDTI,0059,1,ddti_0059_1,False,single panel
+DDTI,0060,1,ddti_0060_1,False,single panel
+DDTI,0061,1,ddti_0061_1,False,single panel
+DDTI,0062,2,ddti_0062_1;ddti_0062_2,True,multiple derived panels for one DDTI case
+DDTI,0063,1,ddti_0063_1,False,single panel
+DDTI,0064,3,ddti_0064_1;ddti_0064_2;ddti_0064_3,True,multiple derived panels for one DDTI case
+DDTI,0065,2,ddti_0065_1;ddti_0065_2,True,multiple derived panels for one DDTI case
+DDTI,0066,1,ddti_0066_1,False,single panel
+DDTI,0067,1,ddti_0067_1,False,single panel
+DDTI,0068,1,ddti_0068_1,False,single panel
+DDTI,0069,3,ddti_0069_1;ddti_0069_2;ddti_0069_3,True,multiple derived panels for one DDTI case
+DDTI,0070,1,ddti_0070_1,False,single panel
+DDTI,0071,1,ddti_0071_1,False,single panel
+DDTI,0072,1,ddti_0072_1,False,single panel
+DDTI,0073,1,ddti_0073_1,False,single panel
+DDTI,0074,1,ddti_0074_1,False,single panel
+DDTI,0075,2,ddti_0075_1;ddti_0075_2,True,multiple derived panels for one DDTI case
+DDTI,0076,1,ddti_0076_1,False,single panel
+DDTI,0077,1,ddti_0077_1,False,single panel
+DDTI,0078,1,ddti_0078_1,False,single panel
+DDTI,0079,1,ddti_0079_1,False,single panel
+DDTI,0080,2,ddti_0080_1;ddti_0080_2,True,multiple derived panels for one DDTI case
+DDTI,0081,2,ddti_0081_1;ddti_0081_2,True,multiple derived panels for one DDTI case
+DDTI,0082,1,ddti_0082_1,False,single panel
+DDTI,0083,1,ddti_0083_1,False,single panel
+DDTI,0084,1,ddti_0084_1,False,single panel
+DDTI,0085,2,ddti_0085_1;ddti_0085_2,True,multiple derived panels for one DDTI case
+DDTI,0086,1,ddti_0086_1,False,single panel
+DDTI,0087,1,ddti_0087_1,False,single panel
+DDTI,0088,2,ddti_0088_1;ddti_0088_2,True,multiple derived panels for one DDTI case
+DDTI,0089,1,ddti_0089_1,False,single panel
+DDTI,0090,2,ddti_0090_1;ddti_0090_2,True,multiple derived panels for one DDTI case
+DDTI,0091,1,ddti_0091_1,False,single panel
+DDTI,0092,4,ddti_0092_1;ddti_0092_2;ddti_0092_3;ddti_0092_4,True,multiple derived panels for one DDTI case
+DDTI,0093,2,ddti_0093_1;ddti_0093_2,True,multiple derived panels for one DDTI case
+DDTI,0094,1,ddti_0094_1,False,single panel
+DDTI,0095,1,ddti_0095_1,False,single panel
+DDTI,0096,2,ddti_0096_1;ddti_0096_2,True,multiple derived panels for one DDTI case
+DDTI,0097,2,ddti_0097_1;ddti_0097_2,True,multiple derived panels for one DDTI case
+DDTI,0098,1,ddti_0098_1,False,single panel
+DDTI,0099,2,ddti_0099_1;ddti_0099_2,True,multiple derived panels for one DDTI case
+DDTI,0100,1,ddti_0100_1,False,single panel
+DDTI,0101,1,ddti_0101_1,False,single panel
+DDTI,0102,1,ddti_0102_1,False,single panel
+DDTI,0103,1,ddti_0103_1,False,single panel
+DDTI,0104,1,ddti_0104_1,False,single panel
+DDTI,0105,1,ddti_0105_1,False,single panel
+DDTI,0106,4,ddti_0106_1;ddti_0106_2;ddti_0106_3;ddti_0106_4,True,multiple derived panels for one DDTI case
+DDTI,0107,1,ddti_0107_1,False,single panel
+DDTI,0108,1,ddti_0108_1,False,single panel
+DDTI,0109,1,ddti_0109_1,False,single panel
+DDTI,0110,1,ddti_0110_1,False,single panel
+DDTI,0111,1,ddti_0111_1,False,single panel
+DDTI,0112,1,ddti_0112_1,False,single panel
+DDTI,0113,1,ddti_0113_1,False,single panel
+DDTI,0114,1,ddti_0114_2,False,single panel
+DDTI,0115,1,ddti_0115_1,False,single panel
+DDTI,0116,1,ddti_0116_1,False,single panel
+DDTI,0117,1,ddti_0117_1,False,single panel
+DDTI,0118,1,ddti_0118_1,False,single panel
+DDTI,0119,1,ddti_0119_1,False,single panel
+DDTI,0121,1,ddti_0121_1,False,single panel
+DDTI,0122,2,ddti_0122_1;ddti_0122_2,True,multiple derived panels for one DDTI case
+DDTI,0123,1,ddti_0123_1,False,single panel
+DDTI,0124,1,ddti_0124_1,False,single panel
+DDTI,0125,1,ddti_0125_1,False,single panel
+DDTI,0126,1,ddti_0126_1,False,single panel
+DDTI,0128,1,ddti_0128_1,False,single panel
+DDTI,0129,2,ddti_0129_1;ddti_0129_2,True,multiple derived panels for one DDTI case
+DDTI,0130,2,ddti_0130_1;ddti_0130_2,True,multiple derived panels for one DDTI case
+DDTI,0131,1,ddti_0131_1,False,single panel
+DDTI,0132,2,ddti_0132_1;ddti_0132_2,True,multiple derived panels for one DDTI case
+DDTI,0133,1,ddti_0133_1,False,single panel
+DDTI,0134,1,ddti_0134_1,False,single panel
+DDTI,0135,1,ddti_0135_1,False,single panel
+DDTI,0136,1,ddti_0136_1,False,single panel
+DDTI,0137,1,ddti_0137_1,False,single panel
+DDTI,0138,2,ddti_0138_1;ddti_0138_2,True,multiple derived panels for one DDTI case
+DDTI,0139,3,ddti_0139_1;ddti_0139_2;ddti_0139_3,True,multiple derived panels for one DDTI case
+DDTI,0140,1,ddti_0140_1,False,single panel
+DDTI,0141,1,ddti_0141_1,False,single panel
+DDTI,0142,1,ddti_0142_1,False,single panel
+DDTI,0143,1,ddti_0143_1,False,single panel
+DDTI,0144,1,ddti_0144_1,False,single panel
+DDTI,0145,1,ddti_0145_1,False,single panel
+DDTI,0146,2,ddti_0146_1;ddti_0146_2,True,multiple derived panels for one DDTI case
+DDTI,0147,1,ddti_0147_1,False,single panel
+DDTI,0148,1,ddti_0148_1,False,single panel
+DDTI,0149,1,ddti_0149_1,False,single panel
+DDTI,0150,1,ddti_0150_1,False,single panel
+DDTI,0151,1,ddti_0151_1,False,single panel
+DDTI,0152,1,ddti_0152_1,False,single panel
+DDTI,0153,1,ddti_0153_1,False,single panel
+DDTI,0154,1,ddti_0154_1,False,single panel
+DDTI,0155,1,ddti_0155_1,False,single panel
+DDTI,0156,2,ddti_0156_1;ddti_0156_2,True,multiple derived panels for one DDTI case
+DDTI,0157,2,ddti_0157_1;ddti_0157_2,True,multiple derived panels for one DDTI case
+DDTI,0158,3,ddti_0158_1;ddti_0158_2;ddti_0158_3,True,multiple derived panels for one DDTI case
+DDTI,0159,1,ddti_0159_1,False,single panel
+DDTI,0160,1,ddti_0160_1,False,single panel
+DDTI,0161,1,ddti_0161_1,False,single panel
+DDTI,0162,1,ddti_0162_1,False,single panel
+DDTI,0163,2,ddti_0163_1;ddti_0163_2,True,multiple derived panels for one DDTI case
+DDTI,0164,1,ddti_0164_1,False,single panel
+DDTI,0167,1,ddti_0167_1,False,single panel
+DDTI,0168,1,ddti_0168_1,False,single panel
+DDTI,0169,1,ddti_0169_1,False,single panel
+DDTI,0170,1,ddti_0170_1,False,single panel
+DDTI,0171,1,ddti_0171_1,False,single panel
+DDTI,0172,1,ddti_0172_1,False,single panel
+DDTI,0173,2,ddti_0173_1;ddti_0173_2,True,multiple derived panels for one DDTI case
+DDTI,0174,1,ddti_0174_1,False,single panel
+DDTI,0175,2,ddti_0175_1;ddti_0175_2,True,multiple derived panels for one DDTI case
+DDTI,0177,2,ddti_0177_1;ddti_0177_2,True,multiple derived panels for one DDTI case
+DDTI,0178,1,ddti_0178_1,False,single panel
+DDTI,0179,1,ddti_0179_1,False,single panel
+DDTI,0180,1,ddti_0180_1,False,single panel
+DDTI,0181,1,ddti_0181_1,False,single panel
+DDTI,0182,1,ddti_0182_1,False,single panel
+DDTI,0183,2,ddti_0183_1;ddti_0183_2,True,multiple derived panels for one DDTI case
+DDTI,0184,1,ddti_0184_1,False,single panel
+DDTI,0185,1,ddti_0185_1,False,single panel
+DDTI,0186,1,ddti_0186_1,False,single panel
+DDTI,0187,1,ddti_0187_1,False,single panel
+DDTI,0188,1,ddti_0188_1,False,single panel
+DDTI,0189,2,ddti_0189_1;ddti_0189_2,True,multiple derived panels for one DDTI case
+DDTI,0190,1,ddti_0190_1,False,single panel
+DDTI,0192,1,ddti_0192_1,False,single panel
+DDTI,0193,1,ddti_0193_1,False,single panel
+DDTI,0194,1,ddti_0194_1,False,single panel
+DDTI,0195,1,ddti_0195_1,False,single panel
+DDTI,0196,1,ddti_0196_1,False,single panel
+DDTI,0198,2,ddti_0198_1;ddti_0198_2,True,multiple derived panels for one DDTI case
+DDTI,0199,1,ddti_0199_1,False,single panel
+DDTI,0200,1,ddti_0200_1,False,single panel
+DDTI,0201,1,ddti_0201_1,False,single panel
+DDTI,0202,1,ddti_0202_1,False,single panel
+DDTI,0204,1,ddti_0204_1,False,single panel
+DDTI,0206,1,ddti_0206_1,False,single panel
+DDTI,0207,1,ddti_0207_1,False,single panel
+DDTI,0208,1,ddti_0208_1,False,single panel
+DDTI,0209,2,ddti_0209_1;ddti_0209_2,True,multiple derived panels for one DDTI case
+DDTI,0210,3,ddti_0210_1;ddti_0210_2;ddti_0210_3,True,multiple derived panels for one DDTI case
+DDTI,0211,1,ddti_0211_1,False,single panel
+DDTI,0212,1,ddti_0212_1,False,single panel
+DDTI,0213,2,ddti_0213_1;ddti_0213_3,True,multiple derived panels for one DDTI case
+DDTI,0214,1,ddti_0214_1,False,single panel
+DDTI,0215,1,ddti_0215_1,False,single panel
+DDTI,0216,1,ddti_0216_1,False,single panel
+DDTI,0217,1,ddti_0217_1,False,single panel
+DDTI,0219,1,ddti_0219_1,False,single panel
+DDTI,0220,1,ddti_0220_1,False,single panel
+DDTI,0221,1,ddti_0221_1,False,single panel
+DDTI,0222,1,ddti_0222_1,False,single panel
+DDTI,0223,1,ddti_0223_1,False,single panel
+DDTI,0224,1,ddti_0224_1,False,single panel
+DDTI,0225,2,ddti_0225_1;ddti_0225_2,True,multiple derived panels for one DDTI case
+DDTI,0226,1,ddti_0226_1,False,single panel
+DDTI,0227,2,ddti_0227_1;ddti_0227_2,True,multiple derived panels for one DDTI case
+DDTI,0228,1,ddti_0228_1,False,single panel
+DDTI,0229,1,ddti_0229_1,False,single panel
+DDTI,0230,1,ddti_0230_1,False,single panel
+DDTI,0231,1,ddti_0231_1,False,single panel
+DDTI,0232,1,ddti_0232_1,False,single panel
+DDTI,0233,2,ddti_0233_1;ddti_0233_2,True,multiple derived panels for one DDTI case
+DDTI,0234,3,ddti_0234_1;ddti_0234_2;ddti_0234_3,True,multiple derived panels for one DDTI case
+DDTI,0235,1,ddti_0235_1,False,single panel
+DDTI,0236,1,ddti_0236_1,False,single panel
+DDTI,0237,1,ddti_0237_1,False,single panel
+DDTI,0238,1,ddti_0238_1,False,single panel
+DDTI,0239,1,ddti_0239_1,False,single panel
+DDTI,0240,1,ddti_0240_1,False,single panel
+DDTI,0241,1,ddti_0241_1,False,single panel
+DDTI,0242,1,ddti_0242_1,False,single panel
+DDTI,0243,1,ddti_0243_1,False,single panel
+DDTI,0244,1,ddti_0244_1,False,single panel
+DDTI,0245,1,ddti_0245_1,False,single panel
+DDTI,0246,1,ddti_0246_1,False,single panel
+DDTI,0247,1,ddti_0247_1,False,single panel
+DDTI,0248,1,ddti_0248_1,False,single panel
+DDTI,0249,1,ddti_0249_1,False,single panel
+DDTI,0250,1,ddti_0250_1,False,single panel
+DDTI,0251,1,ddti_0251_1,False,single panel
+DDTI,0252,1,ddti_0252_1,False,single panel
+DDTI,0253,1,ddti_0253_1,False,single panel
+DDTI,0254,1,ddti_0254_1,False,single panel
+DDTI,0255,1,ddti_0255_1,False,single panel
+DDTI,0256,1,ddti_0256_1,False,single panel
+DDTI,0257,1,ddti_0257_1,False,single panel
+DDTI,0258,1,ddti_0258_1,False,single panel
+DDTI,0259,1,ddti_0259_1,False,single panel
+DDTI,0260,1,ddti_0260_1,False,single panel
+DDTI,0261,1,ddti_0261_1,False,single panel
+DDTI,0262,1,ddti_0262_1,False,single panel
+DDTI,0263,1,ddti_0263_1,False,single panel
+DDTI,0264,1,ddti_0264_1,False,single panel
+DDTI,0265,1,ddti_0265_1,False,single panel
+DDTI,0266,2,ddti_0266_1;ddti_0266_2,True,multiple derived panels for one DDTI case
+DDTI,0267,1,ddti_0267_1,False,single panel
+DDTI,0268,1,ddti_0268_1,False,single panel
+DDTI,0269,1,ddti_0269_1,False,single panel
+DDTI,0270,1,ddti_0270_1,False,single panel
+DDTI,0271,1,ddti_0271_1,False,single panel
+DDTI,0272,1,ddti_0272_1,False,single panel
+DDTI,0273,1,ddti_0273_1,False,single panel
+DDTI,0274,1,ddti_0274_1,False,single panel
+DDTI,0275,1,ddti_0275_1,False,single panel
+DDTI,0276,1,ddti_0276_1,False,single panel
+DDTI,0277,1,ddti_0277_1,False,single panel
+DDTI,0278,1,ddti_0278_1,False,single panel
+DDTI,0279,1,ddti_0279_1,False,single panel
+DDTI,0280,1,ddti_0280_1,False,single panel
+DDTI,0281,1,ddti_0281_1,False,single panel
+DDTI,0282,1,ddti_0282_1,False,single panel
+DDTI,0283,1,ddti_0283_1,False,single panel
+DDTI,0284,1,ddti_0284_1,False,single panel
+DDTI,0285,1,ddti_0285_1,False,single panel
+DDTI,0286,1,ddti_0286_1,False,single panel
+DDTI,0287,1,ddti_0287_1,False,single panel
+DDTI,0288,1,ddti_0288_1,False,single panel
+DDTI,0289,1,ddti_0289_1,False,single panel
+DDTI,0290,1,ddti_0290_1,False,single panel
+DDTI,0291,1,ddti_0291_1,False,single panel
+DDTI,0292,1,ddti_0292_1,False,single panel
+DDTI,0293,1,ddti_0293_1,False,single panel
+DDTI,0294,3,ddti_0294_1;ddti_0294_2;ddti_0294_3,True,multiple derived panels for one DDTI case
+DDTI,0295,1,ddti_0295_1,False,single panel
+DDTI,0296,5,ddti_0296_1;ddti_0296_2;ddti_0296_3;ddti_0296_4;ddti_0296_5,True,multiple derived panels for one DDTI case
+DDTI,0297,1,ddti_0297_1,False,single panel
+DDTI,0298,1,ddti_0298_1,False,single panel
+DDTI,0299,1,ddti_0299_1,False,single panel
+DDTI,0300,1,ddti_0300_1,False,single panel
+DDTI,0301,1,ddti_0301_1,False,single panel
+DDTI,0302,1,ddti_0302_1,False,single panel
+DDTI,0303,1,ddti_0303_1,False,single panel
+DDTI,0304,1,ddti_0304_1,False,single panel
+DDTI,0305,1,ddti_0305_1,False,single panel
+DDTI,0306,1,ddti_0306_1,False,single panel
+DDTI,0307,1,ddti_0307_1,False,single panel
+DDTI,0308,1,ddti_0308_1,False,single panel
+DDTI,0309,1,ddti_0309_1,False,single panel
+DDTI,0310,1,ddti_0310_1,False,single panel
+DDTI,0311,1,ddti_0311_1,False,single panel
+DDTI,0312,1,ddti_0312_1,False,single panel
+DDTI,0313,2,ddti_0313_1;ddti_0313_2,True,multiple derived panels for one DDTI case
+DDTI,0314,1,ddti_0314_1,False,single panel
+DDTI,0315,2,ddti_0315_1;ddti_0315_2,True,multiple derived panels for one DDTI case
+DDTI,0316,1,ddti_0316_1,False,single panel
+DDTI,0317,2,ddti_0317_1;ddti_0317_2,True,multiple derived panels for one DDTI case
+DDTI,0318,2,ddti_0318_1;ddti_0318_2,True,multiple derived panels for one DDTI case
+DDTI,0319,2,ddti_0319_1;ddti_0319_2,True,multiple derived panels for one DDTI case
+DDTI,0320,1,ddti_0320_1,False,single panel
+DDTI,0321,1,ddti_0321_1,False,single panel
+DDTI,0323,1,ddti_0323_1,False,single panel
+DDTI,0326,1,ddti_0326_1,False,single panel
+DDTI,0329,1,ddti_0329_1,False,single panel
+DDTI,0330,2,ddti_0330_1;ddti_0330_2,True,multiple derived panels for one DDTI case
+DDTI,0331,1,ddti_0331_1,False,single panel
+DDTI,0332,1,ddti_0332_1,False,single panel
+DDTI,0333,1,ddti_0333_1,False,single panel
+DDTI,0334,2,ddti_0334_1;ddti_0334_2,True,multiple derived panels for one DDTI case
+DDTI,0335,2,ddti_0335_1;ddti_0335_2,True,multiple derived panels for one DDTI case
+DDTI,0336,1,ddti_0336_2,False,single panel
+DDTI,0337,3,ddti_0337_1;ddti_0337_2;ddti_0337_3,True,multiple derived panels for one DDTI case
+DDTI,0338,2,ddti_0338_1;ddti_0338_2,True,multiple derived panels for one DDTI case
+DDTI,0339,1,ddti_0339_1,False,single panel
+DDTI,0340,1,ddti_0340_1,False,single panel
+DDTI,0341,1,ddti_0341_1,False,single panel
+DDTI,0342,1,ddti_0342_1,False,single panel
+DDTI,0343,1,ddti_0343_1,False,single panel
+DDTI,0344,1,ddti_0344_1,False,single panel
+DDTI,0345,1,ddti_0345_1,False,single panel
+DDTI,0346,1,ddti_0346_1,False,single panel
+DDTI,0347,2,ddti_0347_1;ddti_0347_2,True,multiple derived panels for one DDTI case
+DDTI,0348,1,ddti_0348_1,False,single panel
+DDTI,0349,1,ddti_0349_1,False,single panel
+DDTI,0350,2,ddti_0350_1;ddti_0350_2,True,multiple derived panels for one DDTI case
+DDTI,0351,2,ddti_0351_1;ddti_0351_2,True,multiple derived panels for one DDTI case
+DDTI,0352,1,ddti_0352_1,False,single panel
+DDTI,0353,2,ddti_0353_1;ddti_0353_2,True,multiple derived panels for one DDTI case
+DDTI,0354,1,ddti_0354_1,False,single panel
+DDTI,0355,1,ddti_0355_1,False,single panel
+DDTI,0356,1,ddti_0356_1,False,single panel
+DDTI,0357,1,ddti_0357_1,False,single panel
+DDTI,0358,2,ddti_0358_1;ddti_0358_2,True,multiple derived panels for one DDTI case
+DDTI,0359,2,ddti_0359_1;ddti_0359_2,True,multiple derived panels for one DDTI case
+DDTI,0360,2,ddti_0360_1;ddti_0360_2,True,multiple derived panels for one DDTI case
+DDTI,0361,1,ddti_0361_1,False,single panel
+DDTI,0362,1,ddti_0362_1,False,single panel
+DDTI,0363,1,ddti_0363_1,False,single panel
+DDTI,0364,1,ddti_0364_1,False,single panel
+DDTI,0365,1,ddti_0365_1,False,single panel
+DDTI,0366,3,ddti_0366_1;ddti_0366_2;ddti_0366_3,True,multiple derived panels for one DDTI case
+DDTI,0367,2,ddti_0367_1;ddti_0367_2,True,multiple derived panels for one DDTI case
+DDTI,0368,1,ddti_0368_1,False,single panel
+DDTI,0369,1,ddti_0369_1,False,single panel
+DDTI,0370,1,ddti_0370_1,False,single panel
+DDTI,0371,2,ddti_0371_1;ddti_0371_2,True,multiple derived panels for one DDTI case
+DDTI,0372,1,ddti_0372_1,False,single panel
+DDTI,0373,2,ddti_0373_1;ddti_0373_2,True,multiple derived panels for one DDTI case
+DDTI,0374,1,ddti_0374_1,False,single panel
+DDTI,0375,1,ddti_0375_1,False,single panel
+DDTI,0376,1,ddti_0376_1,False,single panel
+DDTI,0377,1,ddti_0377_1,False,single panel
+DDTI,0378,1,ddti_0378_1,False,single panel
+DDTI,0379,1,ddti_0379_1,False,single panel
+DDTI,0380,1,ddti_0380_1,False,single panel
+DDTI,0381,2,ddti_0381_1;ddti_0381_2,True,multiple derived panels for one DDTI case
+DDTI,0382,1,ddti_0382_1,False,single panel
+DDTI,0383,1,ddti_0383_1,False,single panel
+DDTI,0384,1,ddti_0384_1,False,single panel
+DDTI,0386,1,ddti_0386_1,False,single panel
+DDTI,0387,2,ddti_0387_1;ddti_0387_2,True,multiple derived panels for one DDTI case
+DDTI,0388,1,ddti_0388_1,False,single panel
+DDTI,0390,1,ddti_0390_1,False,single panel
+DDTI,0391,2,ddti_0391_1;ddti_0391_2,True,multiple derived panels for one DDTI case
+DDTI,0392,1,ddti_0392_1,False,single panel
+DDTI,0394,1,ddti_0394_1,False,single panel
+DDTI,0395,2,ddti_0395_1;ddti_0395_2,True,multiple derived panels for one DDTI case
+DDTI,0396,1,ddti_0396_1,False,single panel
+DDTI,0397,1,ddti_0397_1,False,single panel
+DDTI,0398,1,ddti_0398_1,False,single panel
+DDTI,0399,1,ddti_0399_1,False,single panel
+DDTI,0400,1,ddti_0400_1,False,single panel

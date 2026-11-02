@@ -1,0 +1,39 @@
+{
+  "metric_protocol": "per_image_sigmoid05_v2",
+  "dataset": "TN3K",
+  "model": "deeplabv3plus_resnet50",
+  "augmentation": "zoom",
+  "seed": 2,
+  "epochs": 50,
+  "scheduler_epochs": 200,
+  "train_samples": 2303,
+  "val_samples": 576,
+  "train_source_samples": {
+    "TN3K": 2303
+  },
+  "val_source_samples": {
+    "TN3K": 576
+  },
+  "balanced_source_sampling": false,
+  "batch_size": 128,
+  "effective_batch_size": 128,
+  "image_size": 224,
+  "learning_rate": 0.000277414,
+  "weight_decay": 0.000343856,
+  "dropout": 0.454402,
+  "pretrained": true,
+  "top_n": null,
+  "source_datasets": [
+    "TN3K"
+  ],
+  "target_dataset": null,
+  "validation_selection": "validation",
+  "split_manifest": "manifests/metric_v2/splits.csv",
+  "scan_mask_manifest": "manifests/metric_v2/scan_masks.csv",
+  "device": "cuda",
+  "best_dice": 0.8042468442544473,
+  "total_seconds": 538.375516399974,
+  "checkpoint": "checkpoints/m2_single/TN3K/deeplabv3plus_resnet50/zoom/seed_2/best.pt",
+  "log": "runs/m2_single/TN3K/deeplabv3plus_resnet50/zoom/seed_2/train_log.csv",
+  "max_cuda_memory_mb_last_epoch": 9068.19189453125
+}

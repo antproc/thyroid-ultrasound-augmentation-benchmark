@@ -1,0 +1,39 @@
+{
+  "metric_protocol": "per_image_sigmoid05_v2",
+  "dataset": "ThyroidXL",
+  "model": "mit_b2_unet",
+  "augmentation": "depth_attenuation",
+  "seed": 2,
+  "epochs": 50,
+  "scheduler_epochs": 200,
+  "train_samples": 7633,
+  "val_samples": 1908,
+  "train_source_samples": {
+    "ThyroidXL": 7633
+  },
+  "val_source_samples": {
+    "ThyroidXL": 1908
+  },
+  "balanced_source_sampling": false,
+  "batch_size": 128,
+  "effective_batch_size": 128,
+  "image_size": 224,
+  "learning_rate": 0.000277414,
+  "weight_decay": 0.000343856,
+  "dropout": 0.454402,
+  "pretrained": true,
+  "top_n": null,
+  "source_datasets": [
+    "ThyroidXL"
+  ],
+  "target_dataset": null,
+  "validation_selection": "validation",
+  "split_manifest": "manifests/metric_v2/splits.csv",
+  "scan_mask_manifest": "manifests/metric_v2/scan_masks.csv",
+  "device": "cuda",
+  "best_dice": 0.8747001220522461,
+  "total_seconds": 3566.462131400127,
+  "checkpoint": "checkpoints/m2_single/ThyroidXL/mit_b2_unet/depth_attenuation/seed_2/best.pt",
+  "log": "runs/m2_single/ThyroidXL/mit_b2_unet/depth_attenuation/seed_2/train_log.csv",
+  "max_cuda_memory_mb_last_epoch": 12930.0029296875
+}
